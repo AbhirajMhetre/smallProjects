@@ -1,0 +1,22 @@
+#babyimg{
+	max-width: -webkit-fill-available;
+}
+
+.myForm input{
+	display: block;
+	margin-bottom: 10px;
+	width: -webkit-fill-available;
+}
+
+textarea{
+	margin-bottom: 10px;
+	display: block;
+	width: -webkit-fill-available;
+
+}
+
+#asdf{
+
+margin-top: 70px;
+}
+
