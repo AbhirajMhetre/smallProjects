@@ -3132,6 +3132,14 @@ h1{
   max-width: 84rem;
 }
 
+@media (max-width: 699px){
+  .wrapper{
+  margin: 0px 20px !important;
+  }
+}
+
+
+
 .cols{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3337,7 +3345,7 @@ h1{
  
 }
 .parallax form{
-  margin-left: 60px;
+  margin:0px 60px;
 }
 
 .parallax label{
