@@ -1,3 +1,5 @@
+
+
 const $window = $(window);
 const $body = $('body');
 
@@ -186,3 +188,4 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+   
