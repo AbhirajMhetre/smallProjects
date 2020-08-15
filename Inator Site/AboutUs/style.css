@@ -1,4 +1,106 @@
-  
+  body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+  }
+/* POPUP LONDON BRANCH  */
+
+
+#newsletter-popup {
+  z-index: 10;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: 2s ;
+  margin: auto;
+}
+.newsletter-in{
+  text-align: center;
+}
+#newsletter-popup img{
+  width: 95%;
+
+}
+
+
+.newsletter-overlay {
+  position: relative;
+  margin-top: 5%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:transparent;
+  background-repeat: repeat;
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  display: none;
+}
+
+
+#newsletter-popup .popup-close {
+  font-size: 3rem;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+  font-weight: bolder;
+}
+
+
+
+/* Fade left right css */
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+.animation-element.slide-left {
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  opacity: 0;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+.animation-element.slide-right {
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  opacity: 0;
+  -moz-transform: translate3d(100px, 0px, 0px);
+  -webkit-transform: translate3d(100px, 0px, 0px);
+  -o-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  transform: translate3d(100px, 0px, 0px);
+}
+.animation-element.slide-left.in-view, .animation-element.slide-right.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+
+
+
+
+
+
+
    /* Style the navbar */
    #navbar2 {
     overflow: hidden;
@@ -384,7 +486,7 @@
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: #fff;
+  background-color: black;
   transform-origin: 0 0;
 }
 
@@ -408,7 +510,7 @@
   background-image: url("https://theauditlab.com/wp-content/uploads/2019/04/full01.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 400px;
 
   
 }
@@ -419,7 +521,7 @@
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 4rem;
   font-weight: 830;
-  padding-top: 22%;
+  padding-top: 18%;
 }
 
 
@@ -431,8 +533,7 @@
 .aboutparas{
   text-align: left;
   padding: 40px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .row .heading{
@@ -461,6 +562,7 @@
 
 
 /* OUr Beliefs cards */
+
 
 * {
   box-sizing: border-box;
@@ -529,6 +631,7 @@
   padding-bottom: 20px;
   width: 100%;
   text-align: center;
+  opacity: 0.5;
 }
 .card:hover .card-heading {
   display: none;
@@ -561,7 +664,7 @@
   position: absolute;
   width: 100%;
   height: 15%;
-  background-color: #2a4c6f;
+  background-color: #042068;
   left: 140px;
   top: 245px;
   transform: rotate(-45deg) translateY(95px);
@@ -572,11 +675,11 @@
   width: 100%;
   height: 100%;
   bottom: 40px;
-  background: #2a4c6f;
+  background: #042068;
   background: linear-gradient(
     331deg,
-    #052b52 40%,
-    #e8f8ff 66%
+    #0634a7 40%,
+    #4fc2f4 66%
   );
   transform: translateX(-147px);
 }

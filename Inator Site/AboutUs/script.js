@@ -1,3 +1,88 @@
+// LONDON BRANCH POP UP
+var delay = 1000; //in milleseconds
+
+jQuery(document).ready(function($){
+  setTimeout(function(){ showNewsletterPopup(); }, delay);
+  
+  $('.popup-close').click(function(){
+      $('.newsletter-overlay').hide();
+      
+      //when closed create a cookie to prevent popup to show again on refresh
+      setCookie('newsletter-popup', 'popped', 30);
+  });
+});
+
+function showNewsletterPopup(){
+  if( getCookie('newsletter-popup') == ""){
+     $('.newsletter-overlay').show();
+     setCookie('newsletter-popup', 'popped', 30);
+  }
+  else{
+    console.log("Newsletter popup blocked.");
+  }
+}
+
+
+function setCookie(cname,cvalue,exdays)
+{
+    var d = new Date();
+    d.setTime(d.getTime()+(exdays*24*60*60*1000));
+    var expires = "expires="+d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires+"; path=/";
+}
+
+function getCookie(cname)
+{
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) 
+    {
+        var c = jQuery.trim(ca[i]);
+        if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
+
+//Fade left right js
+var $animation_elements = $(".animation-element");
+var $window = $(window);
+
+function check_if_in_view() {
+	var window_height = $window.height();
+	var window_top_position = $window.scrollTop();
+	var window_bottom_position = window_top_position + window_height;
+
+	$.each($animation_elements, function () {
+		var $element = $(this);
+		var element_height = $element.outerHeight();
+		var element_top_position = $element.offset().top;
+		var element_bottom_position = element_top_position + element_height;
+
+		//check to see if this current container is within viewport
+		if (
+			element_bottom_position >= window_top_position &&
+			element_top_position <= window_bottom_position
+		) {
+			$element.addClass("in-view");
+		} else {
+			$element.removeClass("in-view");
+		}
+	});
+}
+
+$window.on("scroll resize", check_if_in_view);
+$window.trigger("scroll", check_if_in_view);
+
+
+
+
+
+
+
+
+
+
 // navbar js
 
 // When the user scrolls the page, execute myFunction
@@ -56,3 +141,9 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
+
+
+
+  
