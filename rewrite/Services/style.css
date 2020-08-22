@@ -1,0 +1,400 @@
+   
+   /* Style the navbar */
+   #navbar {
+    overflow: hidden;
+  
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  #navbar .navbar-nav a{
+    margin-left: 100px;
+    font-size: 20px;
+  }
+  #navbar .navbar-nav a:hover{
+    background-color: #090f35;
+    color: white;
+    transition:0.5s;
+  }
+  
+  /* Page content */
+  
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    background-color:white !important;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  /* NAVBAR CSS */
+  
+  #navbar2
+  {
+    height: 70px;
+  }
+        .wrap {
+          background: #090f35;
+          padding: 10px 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 2; }
+          @media (max-width: 991.98px) {
+            .wrap {
+              display: none; } }
+          .wrap .phone {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8); }
+            .wrap .phone a {
+              color: white;
+              font-size: 12px; }
+            .wrap .phone .fa {
+              color: rgba(255, 255, 255, 0.8); }
+            .wrap .phone .mailus {
+              color: rgba(255, 255, 255, 0.6); }
+        
+        .social-media {
+          display: inline-block; }
+          .social-media p a {
+            width: 28px;
+            height: 28px;
+            margin-right: 7px;
+            border-radius: 50%; }
+            .social-media p a span {
+              color: #fff; }
+            .social-media p a:hover span {
+              color: #fff; }
+        #ftco-nav{
+          display: inline !important;
+        }
+        .ftco-navbar-light {
+          background: transparent;
+          position: absolute;
+          top: 0px;
+          left: 0;
+          right: 0;
+          z-index: 3; 
+         
+        }
+          @media (max-width: 991.98px) {
+            .ftco-navbar-light {
+              background:white !important;
+              position: relative;
+              top: 0;
+              padding-top: 0;
+              padding-bottom: 0; } }
+          .ftco-navbar-light .container {
+            width: 1110px;
+            margin: 0; }
+            @media (min-width: 992px) {
+              .ftco-navbar-light .container {
+                background: #fff;
+                border-radius: 4px; } }
+          .ftco-navbar-light .navbar-brand {
+            color: black;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-size: 25px;
+           }
+            .ftco-navbar-light .navbar-brand span {
+              color: #ffa41b; }
+  
+           
+            .ftco-navbar-light .navbar-brand {
+              color: #090f35; }
+              .ftco-navbar-light .navbar-brand:hover {
+                color:#090f35;
+                font-size: 27px;
+              }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light .navbar-brand {
+                color: black;
+                padding-top: 1rem;
+                padding-bottom: 1rem; }
+                
+                  .overlay a {
+                    font-size: 25px !important;
+                  }
+                }
+          @media (max-width: 991.98px) {
+            .ftco-navbar-light .navbar-nav {
+              padding-bottom: 20px;
+              margin-right: 0; } }
+          .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+            font-size: 15px;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #000000;
+            font-weight: 400;
+            opacity: 1 !important; }
+            .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover, .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus {
+              color: #000000; }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                color: #fff; } }
+          .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
+            border: none;
+            background: #fff;
+            -webkit-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
+            -moz-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
+            box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41); }
+          .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
+            position: relative;
+            margin-left: 20px;
+            padding-left: 20px; }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
+                padding-left: 0;
+                margin-left: 0; } }
+            .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
+              position: absolute;
+              content: "";
+              top: 10px;
+              bottom: 10px;
+              left: 0;
+              width: 2px;
+              background: rgba(255, 255, 255, 0.05); }
+              @media (max-width: 991.98px) {
+                .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
+                  display: none; } }
+          .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+            color: #fff;
+            border: 1px solid #323edd;
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+            padding-left: 18px;
+            padding-right: 18px;
+            background: #323edd;
+            margin-top: .5rem;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            border-radius: 2px; }
+            .ftco-navbar-light .navbar-nav > .nav-item.cta > a span {
+              display: inline-block;
+              color: #fff; }
+            .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
+              background: #323edd;
+              border: 1px solid #323edd; }
+          .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
+            border: 1px solid #ffa41b;
+            background: #ffa41b !important; }
+          .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+            color: #323edd; }
+          @media (max-width: 991.98px) {
+            .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+              color: #323edd; } }
+          .ftco-navbar-light .navbar-toggler {
+            border: none;
+            color: rgba(255, 255, 255, 0.5) !important;
+            cursor: pointer;
+            padding-right: 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: .1em; }
+            .ftco-navbar-light .navbar-toggler:hover, .ftco-navbar-light .navbar-toggler:focus {
+              text-decoration: none;
+              color: #323edd;
+              outline: none !important; }
+          .ftco-navbar-light.scrolled {
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin-top: -130px;
+            background: #fff !important;
+            -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            padding: 0; }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light.scrolled .nav-item > .nav-link {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                padding-bottom: 0 !important; } }
+            .ftco-navbar-light.scrolled .nav-item.active > a {
+              color: #323edd !important; }
+            .ftco-navbar-light.scrolled .nav-item.cta > a {
+              color: #fff !important;
+              background: #323edd;
+              border: none !important;
+              padding-top: 0.5rem !important;
+              padding-bottom: .5rem !important;
+              padding-left: 20px !important;
+              padding-right: 20px !important;
+              margin-top: 6px !important;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              -ms-border-radius: 5px;
+              border-radius: 5px; }
+              .ftco-navbar-light.scrolled .nav-item.cta > a span {
+                display: inline-block;
+                color: #fff !important; }
+            .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
+              border-color: #323edd; }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light.scrolled .navbar-nav {
+                background: none;
+                border-radius: 0px;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                margin-left: 0 !important; } }
+            .ftco-navbar-light.scrolled .navbar-toggler {
+              border: none;
+              color: rgba(0, 0, 0, 0.5) !important;
+              border-color: rgba(0, 0, 0, 0.5) !important;
+              cursor: pointer;
+              margin-right: 15px !important;
+              text-transform: uppercase;
+              font-size: 16px;
+              letter-spacing: .1em; }
+            .ftco-navbar-light.scrolled .nav-link {
+              padding-top: 1rem !important;
+              padding-bottom: 1rem !important;
+              color: #000000 !important; }
+              .ftco-navbar-light.scrolled .nav-link.active {
+                color: #323edd !important; }
+            .ftco-navbar-light.scrolled.awake {
+              margin-top: 0px;
+              -webkit-transition: .3s all ease-out;
+              -o-transition: .3s all ease-out;
+              transition: .3s all ease-out; }
+            .ftco-navbar-light.scrolled.sleep {
+              -webkit-transition: .3s all ease-out;
+              -o-transition: .3s all ease-out;
+              transition: .3s all ease-out; }
+            .ftco-navbar-light.scrolled .navbar-brand {
+              color: #323edd;
+              padding-top: 1rem;
+              padding-bottom: 1rem; }
+              .ftco-navbar-light .navbar-brand span {
+                color: #ffa41b; }
+        
+        .navbar-brand {
+          font-weight: 900;
+          font-size: 20px; }
+          .navbar-brand span {
+            font-weight: 900;
+            color: #000000; }
+  
+  
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0);
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-left: 150px;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    list-style-type: none;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  @media (max-width: 600px){
+   .overlay{
+     padding-left: 30px;
+   }
+  }
+     
+           
+        /* NAVBAR END */
+
+
+
+
+/* Services wala css */
+.service-logo img{
+    width: 80px;
+    height: 120px;
+}
+h1{
+    color: #06236f;
+    text-align: left;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 3rem;
+    font-weight: 730;
+
+}
+
+#Services .container-fluid{
+    margin: 70px 200px 50px 5%;
+    padding-right: 10%;
+}
+#Services .service-info{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 1.2rem;
+}
+#Services .service-info{
+    padding: 4% 0%;
+}
+.service-tech{
+  color: #06236f;
+  text-align: left;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 2rem;
+  font-weight: 730;
+
+}
+#Services  .service-logo img{
+    margin: 10px 40px;
+}

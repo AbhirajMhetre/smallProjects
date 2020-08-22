@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inator</title>
+    <!-- BOOTSTRAP FOR NAVBAR -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+</head>
+<body>
+<!-- slideshow -->
+<div id="wrapper">
+  <section class="slideshow" id="js-header">
+
+    <div class="slideshow__slide js-slider-home-slide is-current" data-slide="1">
+      <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+        <div class="slideshow__slide-background-load-wrap background-absolute">
+          <div class="slideshow__slide-background-load background-absolute">
+            <div class="slideshow__slide-background-wrap background-absolute">
+              <div class="slideshow__slide-background background-absolute">
+                <div class="slideshow__slide-image-wrap background-absolute">
+                  <div class="slideshow__slide-image background-absolute" style="background-image: url('https://image.ibb.co/gzOBup/showcase.jpg');"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slideshow__slide-caption">
+        <div class="slideshow__slide-caption-text">
+          <div id="title1" class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+            <h1  class="slideshow__slide-caption-title">Changing the way we work, function, live.<br> We are Ready to make a Better Tomorrow. Are You?
+            </h1>
+            <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+              <span class="slideshow__slide-caption-subtitle-label">Let's Work on a Project</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slideshow__slide js-slider-home-slide is-next" data-slide="2">
+      <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+        <div class="slideshow__slide-background-load-wrap background-absolute">
+          <div class="slideshow__slide-background-load background-absolute">
+            <div class="slideshow__slide-background-wrap background-absolute">
+              <div class="slideshow__slide-background background-absolute">
+                <div class="slideshow__slide-image-wrap background-absolute">
+                  <div class="slideshow__slide-image background-absolute" style="background-image: url('https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80');"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slideshow__slide-caption">
+        <div class="slideshow__slide-caption-text">
+          <div id="title2" class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+            <h1 class="slideshow__slide-caption-title">Working to expand your business one pixel at a time.</h1>
+            <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#jumptoteam">
+              <span class="slideshow__slide-caption-subtitle-label">Meet our Team</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slideshow__slide js-slider-home-slide is-prev" data-slide="3">
+      <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top" data-target="#js-header">
+        <div class="slideshow__slide-background-load-wrap background-absolute">
+          <div class="slideshow__slide-background-load background-absolute">
+            <div class="slideshow__slide-background-wrap background-absolute">
+              <div class="slideshow__slide-background background-absolute">
+                <div class="slideshow__slide-image-wrap background-absolute">
+                  <div class="slideshow__slide-image background-absolute" style="background-image: url('https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slideshow__slide-caption">
+        <div class="slideshow__slide-caption-text">
+          <div id="title3" class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+            <h1 class="slideshow__slide-caption-title">The goal isn’t to build a website.<br> The goal is to build your business.</h1>
+            <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+              <span class="slideshow__slide-caption-subtitle-label">Contact Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-header-home_footer">
+      <div class="o-container">
+        <div class="c-header-home_controls -nomobile o-button-group">
+          <div class="js-parallax is-inview" data-speed="1" data-position="top" data-target="#js-header">
+            <button class="o-button -white -square -left js-slider-home-button js-slider-home-prev" type="button">
+              <span class="o-button_label">
+                <svg class="o-button_icon" role="img">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-prev"></use>
+                </svg>
+              </span>
+            </button>
+            <button class="o-button -white -square js-slider-home-button js-slider-home-next" type="button">
+              <span class="o-button_label">
+                <svg class="o-button_icon" role="img">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-next"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div>
+
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <symbol viewBox="0 0 18 18" id="arrow-next">
+        <path id="arrow-next-arrow.svg" d="M12.6,9L4,17.3L4.7,18l8.5-8.3l0,0L14,9l0,0l-0.7-0.7l0,0L4.7,0L4,0.7L12.6,9z" />
+      </symbol>
+      <symbol viewBox="0 0 18 18" id="arrow-prev">
+        <path id="arrow-prev-arrow.svg" d="M14,0.7L13.3,0L4.7,8.3l0,0L4,9l0,0l0.7,0.7l0,0l8.5,8.3l0.7-0.7L5.4,9L14,0.7z" />
+      </symbol>
+    </svg>
+
+
+
+
+
+
+
+
+  
+          <!-- NAVBAR -->
+          <!-- <div class="wrap ">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-12 col-md d-flex align-items-center">
+                  <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span class="mailus">email us:</span> <a href="#">emailsample@email.com</a></p>
+                </div>
+                <div class="col-12 col-md d-flex justify-content-md-end">
+                  <div class="social-media">
+                    <p class="mb-0 d-flex">
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        
+          <nav id="navbar2" class="navbar navbar-expand-lg navbar-dark ftco_navbar  ftco-navbar-light" id="ftco-navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Inator<span>LLP</span></a>
+              
+        
+              <!-- <div id="navbar" class="navbar-collapse collapse navbar-fixed" id="ftco-nav">
+                <ul class="navbar-nav ">
+                  <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Clients</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+        
+                </ul>
+              </div> -->
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="team/index.html" class="nav-link">Team</a></li>
+                  <li class="nav-item"><a href="AboutUs/index.html" class="nav-link">About Us</a></li>
+                  <li class="nav-item"><a href="#scene" class="nav-link">Services</a></li>
+                  <li class="nav-item"><a href="Clients/index.html" class="nav-link">Clients</a></li>
+                  <li class="nav-item"><a href="Careers/index.html" class="nav-link">Careers</a></li>
+                </div>
+              </div>
+      
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+          </nav>
+          <!-- END nav -->
+
+
+  <!-- <div class="container-fluid">
+    <div style="background-color: #e8f8ff" class="row">
+      <div class="col-sm-12 col-md-6">       
+       <div id="para1" >We bring the best solutions for your business.</div>
+      
+        <div class="icons">
+          <ul>
+            <li><img src="icons/appleBnW.svg" alt=""></li>
+            <li><img src="icons/androidBnW.svg" alt=""></li>
+            <li><img src="icons/webBnW.svg" alt=""></li>
+          </ul>
+        </div>
+
+      </div>
+      <div  class="col-sm-12 col-md-6 svgimg">
+        <img style="height: 600px;padding-top: 150px; " src="icons/boy.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 svgimg">
+        <img style="height: 500px;" src="icons/girl.jpg" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div id="para2">
+          <div id="para21">We are a cross platform solutions provider</div> 
+          <div style="text-align: left;">Be it Android, iOS, Web or PC. We have dedicated developers making products for all platforms along with an integrations team to handle seamless transitions from one platform to another
+
+            Rapid Protoyping with Cloud providers like Azure and Google Cloud allow us to bring you MVPs in weeks to days
+                    </div>
+          </div>
+      </div>
+    </div>
+  </div> -->
+
+          <!-- Services we Provide -->
+
+      <div id="saviour" style="height: 700px;">
+       <h2>HIRE US FOR</h2>
+            <div id="scene" style="margin-top: 56.5rem;">
+            <div id="left-zone">
+              <ul class="list">
+                <li class="item">
+                  <input type="radio" id="Website Development" name="basic_carousel" value="" checked="checked"/>
+                  <label class="label_webdev" for="Website Development"><div>Website Development</div></label>
+                  <div class="content content_webdev"><span class="picto"></span>
+                    <h1>Website Development</h1>
+                    <p>Static or Dynamic, with integrations with Cloud Providers or Hosting Services</p>
+                    <button id="wevdevbtn" onclick="location.href = 'Services/index.html?'+ 'WebDev';" type="button" class="btn btn-secondary" >Know More</button>
+                  </div>
+                </li>
+                <li class="item">
+                  <input type="radio" id="radio_A android is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A android is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
+                  <label class="label_android" for="radio_A android is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."><div>Android App Development</div></label>
+                  <div class="content content_android">
+                    <span class="picto"></span>
+                    <h1>Android App Development</h1>
+                    <p>A team of dedicated Android developers working to bring you a smooth native experience</p>
+                    <button id="anddevbtn" onclick="location.href = 'Services/index.html?'+ 'AndroidDevelopement';"  type="button" class="btn btn-secondary">Know More</button>
+                  </div>
+                </li>
+                <li class="item">
+                  <input type="radio" id="pwa" name="basic_carousel" value="The pwa tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the pwa. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."/>
+                  <label class="label_pwa" for="pwa"><div>Progressive Web Apps</div></label>
+                  <div class="content content_pwa"><span class="picto"></span>
+                    <h1>Progressive Web Apps</h1>
+                    <p>Modern and Web-First Mobile Applications for the Internet, with a Native-Like Experience</p>
+                    <button id="pwabtn" onclick="location.href = 'Services/index.html?'+ 'ProgressiveWebApps';"  type="button" class="btn btn-secondary">Know More</button>
+                  </div>
+                </li>
+                <li class="item">
+                  <input type="radio" id="radio_The cps (specifically, the sweet cps) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The cps (specifically, the sweet cps) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
+                  <label class="label_cps" for="radio_The cps (specifically, the sweet cps) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><div>Cross Platform Solutions</div></label>
+                  <div class="content content_cps"><span class="picto"></span>
+                    <h1>Cross Platform Solutions</h1>
+                    <p>Our teams work together to bring a seamless crossplatform experience be it iOS,Web or Android</p>
+                    <button id="cpsbtn" onclick="location.href = 'Services/index.html?'+ 'CrossPlatformSolutions';"  type="button" class="btn btn-secondary">Know More</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="middle-border"></div>
+            <div id="right-zone"></div>
+          </div>
+    </div>
+
+
+
+
+
+<!-- OUR PRODUCTS -->
+ 
+    <div class="wrapper">
+      <h1>Our Products</h1>
+      <div class="row">
+          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-fluid">
+              <div class="front" style="background-image: url(icons/decide.png)">
+                <div class="inner">
+                  <p>DecideInator</p>
+                  <span>Helps you find the food you should have.</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p style="font-size: 1.3rem;">
+                    Sometimes the options are too many, sometimes getting suggestions based on your previous meals leaves out some cuisines, sometimes you just cannot decide what to eat! With this app it will pick something random for you based on your location preference.
+                  </p>
+                  <button type="button" onclick="location.href='https://indevinfinity.com/decideinator/'"  class="btn btn-secondary">Download App</button> 
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-fluid">
+              <div class="front" style="background-image: url(https://images.pexels.com/photos/3793241/pexels-photo-3793241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+                <div class="inner">
+                  <p>Student Console</p>
+                  <span>All needs of a student at one place.</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>Here students can easily access various resources made available by the developers and the university for the benefit of the students.</p>
+                  <button type="button" type="button" onclick="location.href='https://play.google.com/store/apps/details?id=in.edu.projecthermes.www.mitwpustudentconsole/'"  class="btn btn-secondary">Download App</button> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-fluid">
+              <div class="front" style="background-image: url(https://unsplash.it/502/502/)">
+                <div class="inner">
+                  <p>Task-Inator</p>
+                  <span>Mange your tasks at fingertip.</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>A perfect platform for the work from home companies to make
+                    sure the given task is completed by their fellow employees! A
+                    smooth, easy to use and the most effective app there is in the
+                    market
+                   </p>
+                  <button type="button" onclick="location.href='https://task-inator.web.app/'" class="btn btn-secondary">Visit Website</button> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-fluid">
+              <div class="front" style="background-image: url(icons/cricinshots.png)">
+                <div class="inner">
+                  <p>CricInShots</p>
+                  <span>A visual representation of cricket that will make you ponder the pace of cricket.
+                    An Augmented reality, real-time, immersive Cricketing Experience.</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>
+                    The CricInShots app visualizes each ball in a game to get you a picture of the field and the action on it. In a few seconds and a single glance, you will know how many runs, where the ball went and who was on the pitch.</p>
+                  <button type="button" type="button" onclick="location.href='https://cricinshots.com'"  class="btn btn-secondary">Download App</button> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-fluid">
+              <div class="front" style="background-image: url(https://unsplash.it/504/504/">
+                <div class="inner">
+                  <p>Edu-Con</p>
+                  <span>One Stop Solution for Schools, Colleges or any Educational Institution.</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>Heaven for students, Attendance, Question paper, Time-Table, Study Material.
+                     Capture Attendance, Assign tasks, Send Notification for Teachers.
+                    YOU NEED IT? WE HAVE IT!  </p>
+                  <button type="button" type="button" onclick="location.href='https://inator.in/educon/ '" class="btn btn-secondary">Download App</button> 
+                </div>
+              </div>
+            </div>
+          </div >
+          <div class="col-md-4 col-scol-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+            <div class="container-fluid">
+              <div class="front" style="background-image:url(https://unsplash.it/505/505/)">
+                <div class="inner">
+                  <p>Reflupper</p>
+                  <span>Lorem ipsum</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                  <button type="button" type="button" onclick="location.href=''" class="btn btn-secondary">Download App</button> 
+                </div>
+              </div>
+            </div>
+          </div>         
+        </div>
+     </div>
+
+<!-- PARALLAX FOR CONTACT FORM -->
+
+     <div class="parallax">
+      <div class="row">
+        <div class="col-xs-12 col-md-5">
+          <div>
+            
+            <form>
+              <h6>Want To Join Us?</h6>
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Email</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your email ID..">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+
+              <label for="position">You are a</label>
+              <select id="position" name="position">
+                <option value="nothing"></option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="Flutter Developer">Flutter Developer</option>
+                <option value="Android Developer">Android Developer</option>
+                <option value="Digital Marketer">Digital Marketer</option>
+                <option value="Sponsor">Sponsor</option>
+                <option value="Intern">Intern</option>
+                
+              </select>
+
+              <label for="resume">Resume</label>
+              <input name="resume" type="file" accept="application/pdf, application/vnd.ms-excel" />
+          
+              <!-- <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+          
+              <input type="submit" value="SEND">
+          
+            </form>
+          </div>
+        </div>
+     </div>
+    
+<!-- Site footer -->
+
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6 col-md-6">
+        <div>
+          
+          <form>
+            <h6>Contact Us</h6>
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your email ID..">
+        
+      
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="SEND">
+        
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <h6>Address</h6>
+        <div class="text-justify address">Main Office
+          <p class="text-justify">5/403, Ved Vihar, besides Ved Bhavan, Paud road, Kothrud, 411038, Pune</p>
+        </div>
+       
+        <div class="text-justify address">Branch Office
+          <p class="text-justify">5th Floor, D building,MIT WPU, Rambaug colony, Pune</p>
+        </div>
+       
+        <div class="text-justify address">Branch Office
+          <p class="text-justify">37 Wormwhole Road, Shephards Bush, London</p>
+        </div>
+       
+      </div>
+
+
+
+    
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Our Services</h6>
+        <ul class="footer-links">
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">App Development</a></li>
+          <li><a href="#">PWA</a></li>
+          <li><a href="#">Cross-Platform Solutions</a></li>
+          <li><a href="#">Free Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+     <a href="#">INATOR LLP</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>

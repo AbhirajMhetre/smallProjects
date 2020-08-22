@@ -1,0 +1,1240 @@
+  body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+  }
+
+/* POPUP LONDON BRANCH  */
+
+#newsletter-popup {
+  z-index: 10;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: 2s ;
+  margin: auto;
+  
+}
+.newsletter-in{
+  text-align: center;
+}
+#newsletter-popup img{
+  width: 95%;
+
+}
+
+
+.newsletter-overlay {
+  z-index: 10;
+  position: absolute;
+  padding-top: 5%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:#000000e0;
+  background-repeat: repeat;
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  display: none;
+}
+
+
+#newsletter-popup .popup-close {
+  z-index: 10;
+  font-size: 3rem;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+  font-weight: bolder;
+  
+}
+
+
+/* Fade left right css */
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+.animation-element.slide-left {
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  opacity: 0;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+.animation-element.slide-right {
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  opacity: 0;
+  -moz-transform: translate3d(100px, 0px, 0px);
+  -webkit-transform: translate3d(100px, 0px, 0px);
+  -o-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  transform: translate3d(100px, 0px, 0px);
+}
+.animation-element.slide-left.in-view, .animation-element.slide-right.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+
+
+
+
+
+
+   /* Style the navbar */
+   #navbar2 {
+    overflow: hidden;
+  
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  #navbar .navbar-nav a{
+    margin-left: 100px;
+    font-size: 20px;
+  }
+  #navbar .navbar-nav a:hover{
+    background-color: #090f35;
+    color: white;
+    transition:0.5s;
+  }
+  
+  /* Page content */
+  
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    background-color:white !important;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  /* NAVBAR CSS */
+  
+  #navbar2
+  {
+    height: 70px;
+  }
+        .wrap {
+          background: #090f35;
+          padding: 10px 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 2; }
+          @media (max-width: 991.98px) {
+            .wrap {
+              display: none; } }
+          .wrap .phone {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8); }
+            .wrap .phone a {
+              color: white;
+              font-size: 12px; }
+            .wrap .phone .fa {
+              color: rgba(255, 255, 255, 0.8); }
+            .wrap .phone .mailus {
+              color: rgba(255, 255, 255, 0.6); }
+        
+        .social-media {
+          display: inline-block; }
+          .social-media p a {
+            width: 28px;
+            height: 28px;
+            margin-right: 7px;
+            border-radius: 50%; }
+            .social-media p a span {
+              color: #fff; }
+            .social-media p a:hover span {
+              color: #fff; }
+        #ftco-nav{
+          display: inline !important;
+        }
+        .ftco-navbar-light {
+          background: transparent;
+          position: absolute;
+          top: 0px;
+          left: 0;
+          right: 0;
+          z-index: 3; 
+         
+        }
+          @media (max-width: 991.98px) {
+            .ftco-navbar-light {
+              background:white !important;
+              position: relative;
+              top: 0;
+              padding-top: 0;
+              padding-bottom: 0; } }
+          .ftco-navbar-light .container {
+            width: 1110px;
+            margin: 0; }
+            @media (min-width: 992px) {
+              .ftco-navbar-light .container {
+                background: #fff;
+                border-radius: 4px; } }
+          .ftco-navbar-light .navbar-brand {
+            color: black;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-size: 25px;
+           }
+            .ftco-navbar-light .navbar-brand span {
+              color: #ffa41b; }
+  
+           
+            .ftco-navbar-light .navbar-brand {
+              color: #090f35; }
+              .ftco-navbar-light .navbar-brand:hover {
+                color:#090f35;
+                font-size: 27px;
+              }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light .navbar-brand {
+                color: black;
+                padding-top: 1rem;
+                padding-bottom: 1rem; }
+                
+                  .overlay a {
+                    font-size: 25px !important;
+                  }
+                }
+          @media (max-width: 991.98px) {
+            .ftco-navbar-light .navbar-nav {
+              padding-bottom: 20px;
+              margin-right: 0; } }
+          .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+            font-size: 15px;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #000000;
+            font-weight: 400;
+            opacity: 1 !important; }
+            .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover, .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus {
+              color: #000000; }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                color: #fff; } }
+          .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
+            border: none;
+            background: #fff;
+            -webkit-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
+            -moz-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
+            box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41); }
+          .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
+            position: relative;
+            margin-left: 20px;
+            padding-left: 20px; }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
+                padding-left: 0;
+                margin-left: 0; } }
+            .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
+              position: absolute;
+              content: "";
+              top: 10px;
+              bottom: 10px;
+              left: 0;
+              width: 2px;
+              background: rgba(255, 255, 255, 0.05); }
+              @media (max-width: 991.98px) {
+                .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
+                  display: none; } }
+          .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+            color: #fff;
+            border: 1px solid #323edd;
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+            padding-left: 18px;
+            padding-right: 18px;
+            background: #323edd;
+            margin-top: .5rem;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            border-radius: 2px; }
+            .ftco-navbar-light .navbar-nav > .nav-item.cta > a span {
+              display: inline-block;
+              color: #fff; }
+            .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
+              background: #323edd;
+              border: 1px solid #323edd; }
+          .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
+            border: 1px solid #ffa41b;
+            background: #ffa41b !important; }
+          .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+            color: #323edd; }
+          @media (max-width: 991.98px) {
+            .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+              color: #323edd; } }
+          .ftco-navbar-light .navbar-toggler {
+            border: none;
+            color: rgba(255, 255, 255, 0.5) !important;
+            cursor: pointer;
+            padding-right: 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: .1em; }
+            .ftco-navbar-light .navbar-toggler:hover, .ftco-navbar-light .navbar-toggler:focus {
+              text-decoration: none;
+              color: #323edd;
+              outline: none !important; }
+          .ftco-navbar-light.scrolled {
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin-top: -130px;
+            background: #fff !important;
+            -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            padding: 0; }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light.scrolled .nav-item > .nav-link {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                padding-bottom: 0 !important; } }
+            .ftco-navbar-light.scrolled .nav-item.active > a {
+              color: #323edd !important; }
+            .ftco-navbar-light.scrolled .nav-item.cta > a {
+              color: #fff !important;
+              background: #323edd;
+              border: none !important;
+              padding-top: 0.5rem !important;
+              padding-bottom: .5rem !important;
+              padding-left: 20px !important;
+              padding-right: 20px !important;
+              margin-top: 6px !important;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              -ms-border-radius: 5px;
+              border-radius: 5px; }
+              .ftco-navbar-light.scrolled .nav-item.cta > a span {
+                display: inline-block;
+                color: #fff !important; }
+            .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
+              border-color: #323edd; }
+            @media (max-width: 991.98px) {
+              .ftco-navbar-light.scrolled .navbar-nav {
+                background: none;
+                border-radius: 0px;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                margin-left: 0 !important; } }
+            .ftco-navbar-light.scrolled .navbar-toggler {
+              border: none;
+              color: rgba(0, 0, 0, 0.5) !important;
+              border-color: rgba(0, 0, 0, 0.5) !important;
+              cursor: pointer;
+              margin-right: 15px !important;
+              text-transform: uppercase;
+              font-size: 16px;
+              letter-spacing: .1em; }
+            .ftco-navbar-light.scrolled .nav-link {
+              padding-top: 1rem !important;
+              padding-bottom: 1rem !important;
+              color: #000000 !important; }
+              .ftco-navbar-light.scrolled .nav-link.active {
+                color: #323edd !important; }
+            .ftco-navbar-light.scrolled.awake {
+              margin-top: 0px;
+              -webkit-transition: .3s all ease-out;
+              -o-transition: .3s all ease-out;
+              transition: .3s all ease-out; }
+            .ftco-navbar-light.scrolled.sleep {
+              -webkit-transition: .3s all ease-out;
+              -o-transition: .3s all ease-out;
+              transition: .3s all ease-out; }
+            .ftco-navbar-light.scrolled .navbar-brand {
+              color: #323edd;
+              padding-top: 1rem;
+              padding-bottom: 1rem; }
+              .ftco-navbar-light .navbar-brand span {
+                color: #ffa41b; }
+        
+        .navbar-brand {
+          font-weight: 900;
+          font-size: 20px; }
+          .navbar-brand span {
+            font-weight: 900;
+            color: #000000; }
+  
+  
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0);
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-left: 150px;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    list-style-type: none;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  @media (max-width: 600px){
+   .overlay{
+     padding-left: 30px;
+   }
+  }
+     
+           
+        /* NAVBAR END */
+
+
+/* HEADING ABOUT US CSS */
+.ml1 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutus-heading{
+  background-image: url("https://theauditlab.com/wp-content/uploads/2019/04/full01.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 400px;
+
+  
+}
+.aboutus-heading h1{
+  color: #232324;
+  text-decoration: underline;
+  text-align: center;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 4rem;
+  font-weight: 830;
+  padding-top: 18%;
+  margin: 0px;
+}
+
+
+.aboutimgs img{
+ width: 100%;
+ max-height: 500px;
+}
+
+.aboutparas{
+  text-align: left;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+.row .heading{
+  color: #ffa41b;
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 20px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 3.5rem;
+  font-weight: 730;
+}
+
+#beliefheading{
+  color: #ffa41b;
+  text-align: left;
+  padding-left: 192px;
+  padding-top: 20px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 3.5rem;
+  font-weight: 730;
+
+}
+
+
+
+
+
+/* OUr Beliefs cards */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+ 
+  box-shadow: 10px 10px 20px #b4b4b4, -10px -10px 20px #a7a7a7;
+  transform: scale(1.05);
+  margin: 2rem;
+}
+#card1{
+  background-image: url("https://image.freepik.com/free-vector/teamwork-concept-landing-page_23-2148211326.jpg");
+}
+#card2{
+  background-image: url("https://image.freepik.com/free-vector/work-time-concept-illustration_114360-1074.jpg");
+}
+#card3{
+  background-image: url("https://image.freepik.com/free-vector/business-deal_52683-6265.jpg");
+}
+#card4{
+  background-image: url("https://image.freepik.com/free-vector/graphic-designer-workplace_23-2148099893.jpg");
+}
+#card5{
+  background-image: url("https://image.freepik.com/free-vector/online-courses-concept_23-2148524391.jpg");
+}
+#card6{
+  background-image: url("https://image.freepik.com/free-photo/two-illuminated-crumpled-yellow-paper-light-bulb-white-background_23-2147890100.jpg");
+}
+
+
+#card1:hover , #card2:hover , #card3:hover , #card4:hover , #card5:hover , #card6:hover{
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+}
+
+.card-heading{
+  color: black;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 2.3rem;
+  font-weight: 730;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
+}
+.card:hover .card-heading {
+  display: none;
+}
+
+.colour {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: rgb(255, 60, 14);
+  background: linear-gradient(
+    125deg,
+    rgba(255, 60, 14, 1) 28%,
+    rgba(255, 255, 102, 1) 89%
+  );
+  right: 120px;
+  top: 40px;
+  transform: rotate(-45deg) translateY(-90px);
+}
+.colour::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 40px;
+  background-color: #ff3c0e;
+  transform: translateX(-145px);
+}
+.colour-bottom {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background-color: #042068;
+  left: 140px;
+  top: 245px;
+  transform: rotate(-45deg) translateY(95px);
+}
+.colour-bottom::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 40px;
+  background: #042068;
+  background: linear-gradient(
+    331deg,
+    #0634a7 40%,
+    #4fc2f4 66%
+  );
+  transform: translateX(-147px);
+}
+
+
+.card-text {
+  opacity: 0;
+  position: relative;
+  top: 80px;
+  font-size: 120%;
+}
+.card:hover {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 10px 10px 20px #696969, -10px -10px 20px #686868;
+  animation: large 0.7s ease-in-out forwards;
+}
+@keyframes large {
+  100% {
+    transform: scale(0.85);
+  }
+}
+.card:hover .card-text {
+  opacity: 1;
+}
+.card:hover .colour {
+  animation: move 0.7s ease-in-out forwards;
+}
+@keyframes move {
+  0% {
+    transform: rotate(-45deg) translateY(-85px);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(0px);
+  }
+}
+.card:hover .colour-bottom {
+  animation: move1 0.7s ease-in-out forwards;
+}
+@keyframes move1 {
+  0% {
+    transform: rotate(-45deg) translateY(90px);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(0px);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgba(224, 153, 45, 1);
+}
+
+
+
+
+/* CHILD ORGANISATIONS */
+
+#ChildOrganisation {
+  width: 100%;
+  overflow-y: hidden;
+  height: 700px;
+  margin: 100px 0px;
+}
+.heading{
+  color: #ffa41b;
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 20px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 3.5rem;
+  font-weight: 730;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#ChildOrganisation h1 {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+}
+h1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: -8px;
+  background: #fff;
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+
+.orgDetails{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 70%;
+  height: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+
+}
+.orgDetails:after {
+  content: "";
+  position: absolute;
+ 
+  left: 0;
+  bottom: -8px;
+  background: #fff;
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+
+a.cta {
+  display: block;
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  width: 120px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  left: 50%;
+  bottom: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 2px solid #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+ a.cta:before {
+  content: "";
+  background: #fff;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+}
+ a.cta:hover {
+   color: #000000;
+   background-color:#ffffff63;
+   border: 2px solid #000000;
+   transition: 0.5s;
+}
+
+#ChildOrganisation .container {
+  background: #09f;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container .one-half {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.container .one-half.left {
+  left: 0;
+  background: url("../icons/cricinshots.png") center center no-repeat;
+  background-size: cover;
+}
+.container .one-half.left:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 120, 0.5);
+  position: absolute;
+}
+.container .one-half.right {
+  right: 0;
+  background: url("../icons/mit.jpg") center center no-repeat;
+  background-size: cover;
+}
+.container .one-half.right:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(244 51 9 / 0.36);
+  position: absolute;
+}
+.container .one-half.left, .container .one-half.right {
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+.container .one-half.left:before, .container .one-half.right:before {
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+.container.left-is-hovered .left {
+  width: 85%;
+}
+.container.left-is-hovered .left h1:after {
+  width: 100%;
+}
+.container.left-is-hovered .right {
+  width: 15%;
+}
+.container.left-is-hovered .right:before {
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2;
+}
+.container.right-is-hovered .right {
+  width: 85%;
+}
+.container.right-is-hovered .right h1:after {
+  width: 100%;
+}
+.container.right-is-hovered .left {
+  width: 15%;
+}
+.container.right-is-hovered .left:before {
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2;
+}
+
+/* End of child organisations */
+
+
+
+
+
+
+
+/*  Footer css */
+
+
+
+/* PARALLAX FOR CONTACT FORM */
+.parallax {
+  /* The image used */
+  background-image: url("https://www.idi-lab.com/wp-content/uploads/2018/02/contact-background.jpg");
+
+  /* Set a specific height */
+  min-height: 650px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* FOOTER CONTACT FORM */
+
+.parallax h6{
+  color: white;
+  text-align: left;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 3rem;
+  padding-top: 40px;
+ 
+}
+form{
+  margin:0px 60px;
+}
+
+.parallax label{
+  font-size:1.3rem ;
+  color: white;
+  font-weight: 500;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input, select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical ;/* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: white;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color:#ffa41b;;
+  color: white;
+  transition: 0.5s;
+}
+input[type=file]{
+  padding: 0px !important;
+  line-height: 46px;
+}
+.parallax label {
+  margin-bottom: 0;
+}
+
+
+.site-footer
+{
+margin-top: 50px;
+background-color:#26272b;
+padding:45px 0 20px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+}
+.site-footer hr
+{
+border-top-color:#bbb;
+opacity:0.5
+}
+.site-footer hr.small
+{
+margin:20px 0
+}
+.site-footer h6
+{
+color:#fff;
+font-size:20px;
+font-weight: 700;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px
+}
+.site-footer a
+{
+color:#737373;
+}
+.site-footer a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+.footer-links
+{
+padding-left:0;
+list-style:none;
+font-size: 1.3rem;
+line-height: 2rem;
+}
+.footer-links li
+{
+display:block
+}
+.footer-links a
+{
+color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+.footer-links.inline li
+{
+display:inline-block
+}
+.site-footer .social-icons
+{
+text-align:right;
+width: max-content;
+}
+.site-footer .social-icons a
+{
+width:40px;
+height:40px;
+line-height:40px;
+margin-left:6px;
+margin-right:0;
+border-radius:100%;
+background-color:#33353d;
+}
+.copyright-text
+{
+margin:0
+}
+@media (max-width:991px)
+{
+.site-footer [class^=col-]
+{
+  margin-bottom:30px
+}
+}
+@media (max-width:767px)
+{
+.site-footer
+{
+  padding-bottom:0
+}
+.site-footer .copyright-text,.site-footer .social-icons
+{
+  text-align:center
+}
+}
+.social-icons
+{
+padding-left:0;
+margin-bottom:0;
+list-style:none
+}
+.social-icons li
+{
+display:inline-block;
+margin-bottom:4px
+}
+.social-icons li.title
+{
+margin-right:15px;
+text-transform:uppercase;
+color:#96a2b2;
+font-weight:700;
+font-size:13px
+}
+.social-icons a{
+background-color:#eceeef;
+color:#818a91;
+font-size:16px;
+display:inline-block;
+line-height:44px;
+width:44px;
+height:44px;
+text-align:center;
+margin-right:8px;
+border-radius:100%;
+-webkit-transition:all .2s linear;
+-o-transition:all .2s linear;
+transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+color:#fff;
+background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+line-height:34px;
+height:34px;
+width:34px;
+font-size:14px
+}
+.social-icons a.facebook:hover
+{
+background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+.social-icons li.title
+{
+  display:block;
+  margin-right:0;
+  font-weight:600
+}
+}
+
+.address{
+  margin: 20px 0px;
+}
+
+.site-footer img{
+  width: 100px;
+}
+
+
+
+
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+  #newsletter-popup {
+    margin-top: 5%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+  
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+  
+}
+@media only screen and (max-device-width: 480px) {
+ /* styles for mobile browsers smaller than 480px; (iPhone) */
+ #newsletter-popup {
+  width: 100% !important;
+  margin-top: 50%;
+}
+.orgDetails {font-size: 1rem !important;}
+#ChildOrganisation h1 {font-size: 1.1rem;}
+#newsletter-popup .popup-close {font-size: 2rem;}
+.aboutus-heading {height: 250px;}
+.row .heading{font-size: 3rem;}
+.heading{font-size: 1.5rem;}
+#beliefheading{padding-left: 40px;}
+.aboutus-heading h1{padding-top: 30%;}
+}
+@media only screen and (device-width: 768px) {
+ /* default iPad screens */
+ 
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+/* For portrait layouts only */
+#newsletter-popup {
+  width: 100% !important;
+  margin-top: 50%;
+}
+.orgDetails {font-size: 2.4rem !important;}
+#ChildOrganisation h1 {font-size: 1.35rem;}
+#newsletter-popup .popup-close {font-size: 2rem;}
+#beliefheading{padding-left: 130px;}
+#ChildOrganisation {height: 1300px;}
+#ChildOrganisation h1 {font-size: 3rem;}
+a.cta {height: 50px;width: 180px;font-size: 1.1rem;}
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+/* For landscape layouts only */
+
+}
+
