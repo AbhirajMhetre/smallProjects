@@ -19,7 +19,6 @@
    /* Style the navbar */
    #navbar {
     overflow: hidden;
-  
   }
   
   /* Navbar links */
@@ -102,7 +101,7 @@
         .ftco-navbar-light {
           background: transparent;
           position: absolute;
-          top: 0px;
+          top: 0;
           left: 0;
           right: 0;
           z-index: 3; 
@@ -116,7 +115,7 @@
               padding-top: 0;
               padding-bottom: 0; } }
           .ftco-navbar-light .container {
-            width: 1110px;
+            
             margin: 0; }
             @media (min-width: 992px) {
               .ftco-navbar-light .container {
@@ -134,10 +133,7 @@
            
             .ftco-navbar-light .navbar-brand {
               color: #090f35; }
-              .ftco-navbar-light .navbar-brand:hover {
-                color:#090f35;
-                font-size: 27px;
-              }
+   
             @media (max-width: 991.98px) {
               .ftco-navbar-light .navbar-brand {
                 color: black;
@@ -210,17 +206,11 @@
             .ftco-navbar-light .navbar-nav > .nav-item.cta > a span {
               display: inline-block;
               color: #fff; }
-            .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
-              background: #323edd;
-              border: 1px solid #323edd; }
+ 
           .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
             border: 1px solid #ffa41b;
             background: #ffa41b !important; }
-          .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-            color: #323edd; }
-          @media (max-width: 991.98px) {
-            .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-              color: #323edd; } }
+
           .ftco-navbar-light .navbar-toggler {
             border: none;
             color: rgba(255, 255, 255, 0.5) !important;
@@ -231,7 +221,6 @@
             letter-spacing: .1em; }
             .ftco-navbar-light .navbar-toggler:hover, .ftco-navbar-light .navbar-toggler:focus {
               text-decoration: none;
-              color: #323edd;
               outline: none !important; }
           .ftco-navbar-light.scrolled {
             position: fixed;
@@ -248,11 +237,7 @@
                 padding-left: 0 !important;
                 padding-right: 0 !important;
                 padding-bottom: 0 !important; } }
-            .ftco-navbar-light.scrolled .nav-item.active > a {
-              color: #323edd !important; }
             .ftco-navbar-light.scrolled .nav-item.cta > a {
-              color: #fff !important;
-              background: #323edd;
               border: none !important;
               padding-top: 0.5rem !important;
               padding-bottom: .5rem !important;
@@ -266,8 +251,6 @@
               .ftco-navbar-light.scrolled .nav-item.cta > a span {
                 display: inline-block;
                 color: #fff !important; }
-            .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
-              border-color: #323edd; }
             @media (max-width: 991.98px) {
               .ftco-navbar-light.scrolled .navbar-nav {
                 background: none;
@@ -725,6 +708,12 @@ body {
     margin: 15px 0;
     text-transform: none;
   }
+
+  .fa-stack img{
+    height: 60%;
+    
+  }
+  .fa-stack{background-color:#e8f8ff;border-radius: 50%;}
   
   #portfolio .portfolio-item {
     right: 0;
@@ -737,6 +726,8 @@ body {
     margin: 0 auto;
     max-width: 400px;
     overflow: hidden;
+    text-align: center;
+    background-color:white;
   }
   
   #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -769,7 +760,6 @@ body {
     color: #fff;
   }
   .portfolio-link img{
-    width: 100%;
     margin: 20px;
   }
   
@@ -802,18 +792,19 @@ body {
     padding: 25px;
     max-width: 400px;
     text-align: center;
-    background-color: #fff;
+    background-color: #e0dfdf;
   }
   
   #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
+    font-size: 1.2rem;
   }
   
   #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
   }
   
   #portfolio * {
@@ -1215,7 +1206,8 @@ body {
   }
 
   .portfolio-item img{
-    height: 300px;
+    height: 150px;
+    padding: 10px;
   }
   
   ::-moz-selection {
@@ -1240,3 +1232,305 @@ body {
     webkit-tap-highlight-color: #ffa41b;
   }
   
+  @media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    #portfolio .portfolio-item .portfolio-caption h4 {
+      font-size: 12px;}
+      #portfolio .portfolio-item .portfolio-caption p { font-size: 10px;}
+      .portfolio-item img { height: 100px;}
+ 
+   
+   }
+
+    /* different techniques for iPad screening */
+   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+  
+    }
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+    
+      }
+
+  @media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+  
+  }
+  @media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+
+  }
+  @media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+ 
+  }
+
+  @media only screen and (device-width: 768px) {
+   /* default iPad screens */
+  
+  }
+ 
+
+
+
+
+
+
+/*  Footer css */
+
+
+
+/* PARALLAX FOR CONTACT FORM */
+.parallax {
+  /* The image used */
+  background-image: url("https://www.idi-lab.com/wp-content/uploads/2018/02/contact-background.jpg");
+
+  /* Set a specific height */
+  min-height: 650px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* FOOTER CONTACT FORM */
+
+.parallax h6{
+  color: white;
+  text-align: left;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 3rem;
+  padding-top: 40px;
+ 
+}
+form{
+  margin:0px 60px;
+}
+
+.parallax label{
+  font-size:1.3rem ;
+  color: white;
+  font-weight: 500;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input, select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical ;/* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: white;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color:#ffa41b;;
+  color: white;
+  transition: 0.5s;
+}
+input[type=file]{
+  padding: 0px !important;
+  line-height: 46px;
+}
+.parallax label {
+  margin-bottom: 0;
+}
+
+
+.site-footer
+{
+margin-top: 50px;
+background-color:#26272b;
+padding:45px 0 20px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+}
+.site-footer hr
+{
+border-top-color:#bbb;
+opacity:0.5
+}
+.site-footer hr.small
+{
+margin:20px 0
+}
+.site-footer h6
+{
+color:#fff;
+font-size:20px;
+font-weight: 700;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px
+}
+.site-footer a
+{
+color:#737373;
+}
+.site-footer a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+.footer-links
+{
+padding-left:0;
+list-style:none;
+font-size: 18px
+line-height: 2rem;
+}
+.footer-links li
+{
+display:block
+}
+.footer-links a
+{
+color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+.footer-links.inline li
+{
+display:inline-block
+}
+.site-footer .social-icons
+{
+text-align:right;
+}
+.site-footer .social-icons a
+{
+width:40px;
+height:40px;
+line-height:40px;
+margin-left:6px;
+margin-right:0;
+border-radius:100%;
+background-color:#33353d;
+}
+.copyright-text
+{
+margin:0
+}
+@media (max-width:991px)
+{
+.site-footer [class^=col-]
+{
+  margin-bottom:30px
+}
+}
+@media (max-width:767px)
+{
+.site-footer
+{
+  padding-bottom:0
+}
+.site-footer .copyright-text,.site-footer .social-icons
+{
+  text-align:center
+}
+}
+.social-icons
+{
+padding-left:0;
+margin-bottom:0;
+list-style:none
+}
+.social-icons li
+{
+display:inline-block;
+margin-bottom:4px
+}
+.social-icons li.title
+{
+margin-right:15px;
+text-transform:uppercase;
+color:#96a2b2;
+font-weight:700;
+font-size:13px
+}
+.social-icons a{
+background-color:#eceeef;
+color:#818a91;
+font-size:16px;
+display:inline-block;
+line-height:44px;
+width:44px;
+height:44px;
+text-align:center;
+margin-right:8px;
+border-radius:100%;
+-webkit-transition:all .2s linear;
+-o-transition:all .2s linear;
+transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+color:#fff;
+background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+line-height:34px;
+height:34px;
+width:34px;
+font-size:14px
+}
+.social-icons a.facebook:hover
+{
+background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+.social-icons li.title
+{
+  display:block;
+  margin-right:0;
+  font-weight:600
+}
+}
+
+.address{
+  margin: 20px 0px;
+}
+
+.site-footer img{
+  width: 100px;
+}
+
+.site-footer .row{
+  width: 100%;
+}
+
