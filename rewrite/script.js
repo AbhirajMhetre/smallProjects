@@ -23,8 +23,16 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
-   
 
+
+
+//   AOS EFFECTS
+AOS.init({
+  duration: 1200
+});
+
+   
+//Slideshow on opening
 const $window = $(window);
 const $body = $('body');
 

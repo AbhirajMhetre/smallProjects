@@ -1,3 +1,9 @@
+//   AOS EFFECTS
+AOS.init({
+  duration: 1200
+});
+
+
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};

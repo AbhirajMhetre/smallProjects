@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
+    <!-- for fade up animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css"> 
 </head>
 <body>
 <!-- slideshow -->
@@ -231,9 +233,9 @@
 
           <!-- Services we Provide -->
 
-      <div id="saviour" style="height: 700px;">
+      <div id="saviour" class="item" style="height: 700px;"  data-aos="slide-up">
        <h2>HIRE US FOR</h2>
-            <div id="scene" style="margin-top: 56.5rem;">
+            <div id="scene">
             <div id="left-zone">
               <ul class="list">
                 <li class="item">
@@ -247,7 +249,7 @@
                 </li>
                 <li class="item">
                   <input type="radio" id="radio_A android is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A android is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
-                  <label class="label_android" for="radio_A android is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."><div>Android App Development</div></label>
+                  <label class="label_android" for="radio_A android is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."><div>Android Development</div></label>
                   <div class="content content_android">
                     <span class="picto"></span>
                     <h1>Android App Development</h1>
@@ -287,9 +289,9 @@
 <!-- OUR PRODUCTS -->
  
     <div class="wrapper">
-      <h1>Our Products</h1>
+      <h1  class="item" data-aos="slide-up">Our Products</h1>
       <div class="row">
-          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+          <div class="col-md-4 col-sm-6 item" data-aos="slide-up" ontouchstart="this.classList.toggle('hover');">
             <div class="container-fluid">
               <div class="front" style="background-image: url(icons/decide.png)">
                 <div class="inner">
@@ -308,7 +310,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+          <div class="col-md-4 col-sm-6 item" data-aos="slide-up" ontouchstart="this.classList.toggle('hover');">
             <div class="container-fluid">
               <div class="front" style="background-image: url(https://images.pexels.com/photos/3793241/pexels-photo-3793241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
                 <div class="inner">
@@ -324,7 +326,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+          <div class="col-md-4 col-sm-6 item" data-aos="slide-up" ontouchstart="this.classList.toggle('hover');">
             <div class="container-fluid">
               <div class="front" style="background-image: url(https://unsplash.it/502/502/)">
                 <div class="inner">
@@ -344,7 +346,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+          <div class="col-md-4 col-sm-6 item" data-aos="slide-up" ontouchstart="this.classList.toggle('hover');">
             <div class="container-fluid">
               <div class="front" style="background-image: url(icons/cricinshots.png)">
                 <div class="inner">
@@ -362,7 +364,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+          <div class="col-md-4 col-sm-6 item" data-aos="slide-up" ontouchstart="this.classList.toggle('hover');">
             <div class="container-fluid">
               <div class="front" style="background-image: url(https://unsplash.it/504/504/">
                 <div class="inner">
@@ -380,7 +382,7 @@
               </div>
             </div>
           </div >
-          <div class="col-md-4 col-scol-md-4 col-sm-6" ontouchstart="this.classList.toggle('hover');">
+          <div class="col-md-4 col-sm-6 item" data-aos="slide-up" ontouchstart="this.classList.toggle('hover');">
             <div class="container-fluid">
               <div class="front" style="background-image:url(https://unsplash.it/505/505/)">
                 <div class="inner">
@@ -401,13 +403,13 @@
 
 <!-- PARALLAX FOR CONTACT FORM -->
 
-     <div class="parallax">
+     <div class="parallax item" data-aos="slide-up">
       <div class="row">
         <div class="col-xs-12 col-md-5">
           <div>
             
             <form>
-              <h6>Want To Join Us?</h6>
+              <h6 >Want To Join Us?</h6>
               <label for="fname">Full Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
           
@@ -446,7 +448,7 @@
   <footer class="site-footer">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-6 col-md-6">
+        <div class="col-xs-6 col-md-6  item" data-aos="slide-up">
           <div>
             
             <form>
@@ -467,7 +469,7 @@
             </form>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-md-3  item" data-aos="slide-up">
           <h6>Address</h6>
           <div class="text-justify address">Main Office
             <p class="text-justify">5/403, Ved Vihar, besides Ved Bhavan, Paud road, Kothrud, 411038, Pune</p>
@@ -487,7 +489,7 @@
   
       
   
-        <div class="col-xs-6 col-md-3">
+        <div class="col-xs-6 col-md-3 item" data-aos="slide-up">
           <h6>Our Services</h6>
           <ul class="footer-links">
             <li><a href="#">Web Development</a></li>
@@ -523,12 +525,13 @@
     </div>
   </footer>
  
-      
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script src="script.js"></script>      
     
 
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </html>

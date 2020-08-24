@@ -649,7 +649,7 @@ font-family: 'Markazi Text', serif;
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   background-color: #f5f5f5;
   text-align: center;	
 }
@@ -1523,6 +1523,8 @@ margin:0
 }
 @media (max-width:767px)
 {
+  form {
+    margin: 0px 5px;}
 .site-footer
 {
   padding-bottom:0

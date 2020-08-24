@@ -28,6 +28,14 @@ function closeNav() {
 
 
 
+
+//   AOS EFFECTS
+AOS.init({
+  duration: 1200
+});
+
+
+
 //New teammates 
 
 $(function () {
