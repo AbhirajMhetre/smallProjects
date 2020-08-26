@@ -395,3 +395,367 @@ $(function () {
 });
 
 
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up1").hover(
+    function (e) {
+      $("div#pop-up1").show();
+    },
+    function () {
+      $("div#pop-up1").hide();
+    }
+  );
+
+  $("#pop-up1").mousemove(function (e) {
+    $("div#pop-up1")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up2").hover(
+    function (e) {
+      $("div#pop-up2").show();
+    },
+    function () {
+      $("div#pop-up2").hide();
+    }
+  );
+
+  $("#pop-up2").mousemove(function (e) {
+    $("div#pop-up2")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up3").hover(
+    function (e) {
+      $("div#pop-up3").show();
+    },
+    function () {
+      $("div#pop-up3").hide();
+    }
+  );
+
+  $("#pop-up3").mousemove(function (e) {
+    $("div#pop-up3")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up4").hover(
+    function (e) {
+      $("div#pop-up4").show();
+    },
+    function () {
+      $("div#pop-up4").hide();
+    }
+  );
+
+  $("#pop-up4").mousemove(function (e) {
+    $("div#pop-up4")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up5").hover(
+    function (e) {
+      $("div#pop-up5").show();
+    },
+    function () {
+      $("div#pop-up5").hide();
+    }
+  );
+
+  $("#pop-up5").mousemove(function (e) {
+    $("div#pop-up5")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up6").hover(
+    function (e) {
+      $("div#pop-up6").show();
+    },
+    function () {
+      $("div#pop-up6").hide();
+    }
+  );
+
+  $("#pop-up6").mousemove(function (e) {
+    $("div#pop-up6")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up7").hover(
+    function (e) {
+      $("div#pop-up7").show();
+    },
+    function () {
+      $("div#pop-up7").hide();
+    }
+  );
+
+  $("#pop-up7").mousemove(function (e) {
+    $("div#pop-up7")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up8").hover(
+    function (e) {
+      $("div#pop-up8").show();
+    },
+    function () {
+      $("div#pop-up8").hide();
+    }
+  );
+
+  $("#pop-up8").mousemove(function (e) {
+    $("div#pop-up8")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up9").hover(
+    function (e) {
+      $("div#pop-up9").show();
+    },
+    function () {
+      $("div#pop-up9").hide();
+    }
+  );
+
+  $("#pop-up9").mousemove(function (e) {
+    $("div#pop-up9")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up10").hover(
+    function (e) {
+      $("div#pop-up10").show();
+    },
+    function () {
+      $("div#pop-up10").hide();
+    }
+  );
+
+  $("#pop-up10").mousemove(function (e) {
+    $("div#pop-up10")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up11").hover(
+    function (e) {
+      $("div#pop-up11").show();
+    },
+    function () {
+      $("div#pop-up11").hide();
+    }
+  );
+
+  $("#pop-up11").mousemove(function (e) {
+    $("div#pop-up11")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up12").hover(
+    function (e) {
+      $("div#pop-up12").show();
+    },
+    function () {
+      $("div#pop-up12").hide();
+    }
+  );
+
+  $("#pop-up12").mousemove(function (e) {
+    $("div#pop-up12")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up13").hover(
+    function (e) {
+      $("div#pop-up13").show();
+    },
+    function () {
+      $("div#pop-up13").hide();
+    }
+  );
+
+  $("#pop-up13").mousemove(function (e) {
+    $("div#pop-up13")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up14").hover(
+    function (e) {
+      $("div#pop-up14").show();
+    },
+    function () {
+      $("div#pop-up14").hide();
+    }
+  );
+
+  $("#pop-up14").mousemove(function (e) {
+    $("div#pop-up14")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up15").hover(
+    function (e) {
+      $("div#pop-up15").show();
+    },
+    function () {
+      $("div#pop-up15").hide();
+    }
+  );
+
+  $("#pop-up15").mousemove(function (e) {
+    $("div#pop-up15")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up16").hover(
+    function (e) {
+      $("div#pop-up16").show();
+    },
+    function () {
+      $("div#pop-up16").hide();
+    }
+  );
+
+  $("#pop-up16").mousemove(function (e) {
+    $("div#pop-up16")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up17").hover(
+    function (e) {
+      $("div#pop-up17").show();
+    },
+    function () {
+      $("div#pop-up17").hide();
+    }
+  );
+
+  $("#pop-up17").mousemove(function (e) {
+    $("div#pop-up17")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+
+
+
+
+
+
