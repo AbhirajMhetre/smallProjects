@@ -363,7 +363,6 @@
 
 /* Services wala css */
 .service-logo img{
-    width: 80px;
     height: 120px;
 }
 h1{
@@ -396,5 +395,5 @@ h1{
 
 }
 #Services  .service-logo img{
-    margin: 10px 40px;
+    margin: 40px 40px;
 }

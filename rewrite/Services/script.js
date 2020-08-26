@@ -12,13 +12,22 @@ ref.on("value", function(snapshot) {
      
 
       if (url=="WebDev") {
-         service = snapshot.val().Services.WebDev;
+         service = snapshot.val().Services.WebDev;           
+         key = adaRef.child("WebDev").child("logos").key;              
+         var h = adaRef.child("WebDev").child("logos");
        } else if (url=="AndroidDevelopement") {
          service = snapshot.val().Services.AndroidDevelopement;
+         key = adaRef.child("AndroidDevelopement").child("logos").key;              
+         var h = adaRef.child("AndroidDevelopement").child("logos");
        } else if (url=="CrossPlatformSolutions") {
          service = snapshot.val().Services.CrossPlatformSolutions;
+         key = adaRef.child("CrossPlatformSolutions").child("logos").key;              
+         var h = adaRef.child("CrossPlatformSolutions").child("logos");
        } else {
          service = snapshot.val().Services.ProgressiveWebApps;
+         key = adaRef.child("ProgressiveWebApps").child("logos").key;              
+         var h = adaRef.child("ProgressiveWebApps").child("logos");
+         
        }
 
   var content="";
@@ -27,10 +36,7 @@ ref.on("value", function(snapshot) {
    content =  '<div id="Services"><div class="container-fluid"><h1 class="service-heading">' + service.heading +
               '</h1> <div class="service-info">'+ service.info +
             '</div><div class="service-logo"><p class="service-tech">Our Tech Stack:</p>';
-                var j=1;
-                key = adaRef.child("AndroidDevelopement").child("logos").key;
-               
-                    var h = adaRef.child("AndroidDevelopement").child("logos");
+    
 
                     h.once("value", function(snapshot) {
                       snapshot.forEach(function(child) {
