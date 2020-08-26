@@ -878,6 +878,7 @@
  
 
  /* HOVER STYLES */
+
  
 
         
@@ -1331,7 +1332,6 @@ display:inline-block
 .site-footer .social-icons
 {
 text-align:right;
-width: max-content;
 }
 .site-footer .social-icons a
 {

@@ -485,7 +485,7 @@ body[data-route-option="next-section"]
     margin-bottom: 30px;
   }
 }
-@media (min-width: 700px) {
+media (min-width: 700px) {
   .c-header-home_heading {
     font-size: 5.625rem;
     margin-bottom: 1.25rem;
@@ -2122,6 +2122,7 @@ body[data-route-option="next-section"] .c-header-home_buttons {
 
 }
 
+
 /* Navbar links */
 #navbar a {
   float: left;
@@ -2147,9 +2148,10 @@ body[data-route-option="next-section"] .c-header-home_buttons {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed !important;
-  top: 0 !important;
+  top: 40 !important;
   width: 100%;
   background-color:white !important;
+  padding-top: 60px;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -2227,7 +2229,7 @@ body[data-route-option="next-section"] .c-header-home_buttons {
               border-radius: 4px; } }
         .ftco-navbar-light .navbar-brand {
           color: black;
-          padding-top: 1.5rem;
+          padding-top: 2.5rem;
           padding-bottom: 1.5rem;
           font-size: 25px;
          }
@@ -3084,7 +3086,10 @@ h1{
     top: 0;
     left: 0;
     width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     text-align: left;
+    font-family: 'Montserrat';
 }
 
 .inner{

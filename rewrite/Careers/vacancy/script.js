@@ -12,6 +12,7 @@ var Tasks,Expectations,Extras;
 ref.on("value", function(snapshot) {
       var url = location.href;
       url = url.split('?')[1];
+      
      
 
       if (url=="WebDeveloper") {
@@ -22,19 +23,93 @@ ref.on("value", function(snapshot) {
          ExtrasR = adaRef.child("WebDeveloper").child("ExtrasR");
          ExpectationsL = adaRef.child("WebDeveloper").child("ExpectationsL");
          ExpectationsR = adaRef.child("WebDeveloper").child("ExpectationsR");
+       } else if (url=="FlutterDeveloper") {
+         JobDescription = snapshot.val().JobDescription.FlutterDeveloper;
+         TasksL = adaRef.child("FlutterDeveloper").child("TasksL");
+         TasksR = adaRef.child("FlutterDeveloper").child("TasksR");
+         ExtrasL = adaRef.child("FlutterDeveloper").child("ExtrasL");
+         ExtrasR = adaRef.child("FlutterDeveloper").child("ExtrasR");
+         ExpectationsL = adaRef.child("FlutterDeveloper").child("ExpectationsL");
+         ExpectationsR = adaRef.child("FlutterDeveloper").child("ExpectationsR");
+       } else if (url=="iOSDeveloper") {
+         JobDescription = snapshot.val().JobDescription.iOSDeveloper;
+         TasksL = adaRef.child("iOSDeveloper").child("TasksL");
+         TasksR = adaRef.child("iOSDeveloper").child("TasksR");
+         ExtrasL = adaRef.child("iOSDeveloper").child("ExtrasL");
+         ExtrasR = adaRef.child("iOSDeveloper").child("ExtrasR");
+         ExpectationsL = adaRef.child("iOSDeveloper").child("ExpectationsL");
+         ExpectationsR = adaRef.child("iOSDeveloper").child("ExpectationsR");
+       } else if(url=="UIUXDesigner") {
+         JobDescription = snapshot.val().JobDescription.UIUXDesigner;
+         TasksL = adaRef.child("UIUXDesigner").child("TasksL");
+         TasksR = adaRef.child("UIUXDesigner").child("TasksR");
+         ExtrasL = adaRef.child("UIUXDesigner").child("ExtrasL");
+         ExtrasR = adaRef.child("UIUXDesigner").child("ExtrasR");
+         ExpectationsL = adaRef.child("UIUXDesigner").child("ExpectationsL");
+         ExpectationsR = adaRef.child("UIUXDesigner").child("ExpectationsR");
+       } else if (url=="NodeJSDeveloper") {
+        JobDescription = snapshot.val().JobDescription.NodeJSDeveloper;
+        TasksL = adaRef.child("NodeJSDeveloper").child("TasksL");
+        TasksR = adaRef.child("NodeJSDeveloper").child("TasksR");
+        ExtrasL = adaRef.child("NodeJSDeveloper").child("ExtrasL");
+        ExtrasR = adaRef.child("NodeJSDeveloper").child("ExtrasR");
+        ExpectationsL = adaRef.child("NodeJSDeveloper").child("ExpectationsL");
+        ExpectationsR = adaRef.child("NodeJSDeveloper").child("ExpectationsR");
        } else if (url=="AndroidDeveloper") {
-         JobDescription = snapshot.val().JobDescription.AndroidDeveloper;
-         var h = adaRef.child("AndroidDeveloper").child("Tasks");
-       } else if (url=="UXDesigner") {
-         JobDescription = snapshot.val().JobDescription.UXDesigner;
-       } else if(url=="ProjectManager") {
-         JobDescription = snapshot.val().JobDescription.ProjectManager;
+        JobDescription = snapshot.val().JobDescription.AndroidDeveloper;
+        TasksL = adaRef.child("AndroidDeveloper").child("TasksL");
+        TasksR = adaRef.child("AndroidDeveloper").child("TasksR");
+        ExtrasL = adaRef.child("AndroidDeveloper").child("ExtrasL");
+        ExtrasR = adaRef.child("AndroidDeveloper").child("ExtrasR");
+        ExpectationsL = adaRef.child("AndroidDeveloper").child("ExpectationsL");
+        ExpectationsR = adaRef.child("AndroidDeveloper").child("ExpectationsR");
+       } else if (url=="PHPBackendDeveloper") {
+        JobDescription = snapshot.val().JobDescription.PHPBackendDeveloper;
+        TasksL = adaRef.child("PHPBackendDeveloper").child("TasksL");
+        TasksR = adaRef.child("PHPBackendDeveloper").child("TasksR");
+        ExtrasL = adaRef.child("PHPBackendDeveloper").child("ExtrasL");
+        ExtrasR = adaRef.child("PHPBackendDeveloper").child("ExtrasR");
+        ExpectationsL = adaRef.child("PHPBackendDeveloper").child("ExpectationsL");
+        ExpectationsR = adaRef.child("PHPBackendDeveloper").child("ExpectationsR");
+       } else if (url=="NodeJSBackendDeveloper") {
+        JobDescription = snapshot.val().JobDescription.NodeJSBackendDeveloper;
+        TasksL = adaRef.child("NodeJSBackendDeveloper").child("TasksL");
+        TasksR = adaRef.child("NodeJSBackendDeveloper").child("TasksR");
+        ExtrasL = adaRef.child("NodeJSBackendDeveloper").child("ExtrasL");
+        ExtrasR = adaRef.child("NodeJSBackendDeveloper").child("ExtrasR");
+        ExpectationsL = adaRef.child("NodeJSBackendDeveloper").child("ExpectationsL");
+        ExpectationsR = adaRef.child("NodeJSBackendDeveloper").child("ExpectationsR");
+       } else if (url=="Database") {
+        JobDescription = snapshot.val().JobDescription.Database;
+        TasksL = adaRef.child("Database").child("TasksL");
+        TasksR = adaRef.child("Database").child("TasksR");
+        ExtrasL = adaRef.child("Database").child("ExtrasL");
+        ExtrasR = adaRef.child("Database").child("ExtrasR");
+        ExpectationsL = adaRef.child("Database").child("ExpectationsL");
+        ExpectationsR = adaRef.child("Database").child("ExpectationsR");
+       } else if (url=="DesignArtist") {
+        JobDescription = snapshot.val().JobDescription.DesignArtist;
+        TasksL = adaRef.child("DesignArtist").child("TasksL");
+        TasksR = adaRef.child("DesignArtist").child("TasksR");
+        ExtrasL = adaRef.child("DesignArtist").child("ExtrasL");
+        ExtrasR = adaRef.child("DesignArtist").child("ExtrasR");
+        ExpectationsL = adaRef.child("DesignArtist").child("ExpectationsL");
+        ExpectationsR = adaRef.child("DesignArtist").child("ExpectationsR");
+       } else if (url=="SocialMediaHandler") {
+        JobDescription = snapshot.val().JobDescription.SocialMediaHandler;
+        TasksL = adaRef.child("SocialMediaHandler").child("TasksL");
+        TasksR = adaRef.child("SocialMediaHandlere").child("TasksR");
+        ExtrasL = adaRef.child("SocialMediaHandler").child("ExtrasL");
+        ExtrasR = adaRef.child("SocialMediaHandler").child("ExtrasR");
+        ExpectationsL = adaRef.child("SocialMediaHandler").child("ExpectationsL");
+        ExpectationsR = adaRef.child("SocialMediaHandler").child("ExpectationsR");
        }
 
   var content="";
 
+
    
-   content =  '<div class="container"><div id="intro" class="item" data-aos="slide-up"><h1>' + JobDescription.Mainheading +
+   content =  '<div class="container"><div id="intro" class="item" data-aos="slide-up"><h1>' + JobDescription.MainHeading +
    '</h1><hr><div id="intropara">' + JobDescription.MainPara + 
    '</div><button class="apply-btn">APPLY NOW</button></div><div class="section item" data-aos="slide-up"><h2 >Your tasks will be...</h2><div class="row"><div class="col-md-6 ">' ;
                 TasksL.once("value", function(snapshot) {

@@ -1208,6 +1208,7 @@ body {
   .portfolio-item img{
     height: 150px;
     padding: 10px;
+    text-align: center;
   }
   
   ::-moz-selection {
