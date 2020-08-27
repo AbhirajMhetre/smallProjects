@@ -477,6 +477,11 @@ body{
 
 
  /* CONTACT FORM */
+
+ .text-muted {
+  color: #dadada!important;
+  font-weight: 800;
+}
  section {
     padding: 100px 0;
   }
@@ -495,7 +500,7 @@ body{
     text-transform: none;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
   }
   
   @media (min-width: 768px) {
@@ -630,8 +635,15 @@ body{
   padding-top: 40px;
  
 }
-form{
-  margin:0px 60px;
+@media(min-width:800px){
+  form{
+    margin:0px 60px;
+  }
+}
+@media(max-width:800px){
+  form{
+    margin:0px 20px;
+  }
 }
 
 .parallax label{
