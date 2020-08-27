@@ -1,3 +1,13 @@
+$(function() {
+  $('.scroll-down').click (function() {
+    $('html, body').animate({scrollTop: $('.scroll-down').offset().top }, 'slow');
+    return false;
+  });
+});
+
+
+
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 

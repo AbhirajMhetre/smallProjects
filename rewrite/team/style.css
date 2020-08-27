@@ -444,7 +444,7 @@
         .profile-card {
           background: #FFB300;
           width: 56px;
-          height: 56px;
+          height: auto;
           position: fixed;
           left: 50%;
           top: 50%;
