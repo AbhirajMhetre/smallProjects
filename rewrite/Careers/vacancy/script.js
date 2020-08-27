@@ -111,7 +111,7 @@ ref.on("value", function(snapshot) {
    
    content =  '<div class="container"><div id="intro" class="item" data-aos="slide-up"><h1>' + JobDescription.MainHeading +
    '</h1><hr><div id="intropara">' + JobDescription.MainPara + 
-   '</div><button class="apply-btn">APPLY NOW</button></div><div class="section item" data-aos="slide-up"><h2 >Your tasks will be...</h2><div class="row"><div class="col-md-6 ">' ;
+   '</div><button class="apply-btn" onclick="window.location=\'#extras\';">APPLY NOW</button></div><div class="section item" data-aos="slide-up"><h2 >Your tasks will be...</h2><div class="row"><div class="col-md-6 ">' ;
                 TasksL.once("value", function(snapshot) {
                   snapshot.forEach(function(child) {
                     content += '<p>' + child.val() + '</p> <hr>';
@@ -137,7 +137,7 @@ ref.on("value", function(snapshot) {
                       content += '<p>' + child.val() + '</p> <hr>';
                     });
                   });
-                  content += '</div></div></div><div class="section item" data-aos="slide-up"><h2>We are going to be exceptionally happy if you...</h2><div class="row"><div class="col-md-6">';
+                  content += '</div></div></div><div class="section item" data-aos="slide-up" id="extras"><h2>We are going to be exceptionally happy if you...</h2><div class="row"><div class="col-md-6">';
                   ExtrasL.once("value", function(snapshot) {
                     snapshot.forEach(function(child) {
                       content += '<p>' + child.val() + '</p> <hr>';
@@ -162,7 +162,7 @@ ref.on("value", function(snapshot) {
               '<div class="row">'+
                 '<div class="col-lg-12 text-center">'+
                   '<h2 class="section-heading">Apply Now!!</h2>'+
-                  '<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>'+
+                  '<h3 class="section-subheading text-muted">Be a part of the Inator team.</h3>'+
                 '</div>'+
               '</div>'+
               '<div class="row">'+
@@ -190,7 +190,7 @@ ref.on("value", function(snapshot) {
                       '</div>'+
                       '<div class="col-md-6">'+
                         '<div class="form-group">'+
-                          '<textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>'+
+                          '<textarea class="form-control" placeholder="Why should we hire you?" id="message" required="" data-validation-required-message="Please enter a message."></textarea>'+
                           '<p class="help-block text-danger"></p>'+
                         '</div>'+
                      '</div>'+

@@ -502,6 +502,7 @@ body{
     section {
       padding: 150px 0;
     }
+
   }
 
  section#contact {
@@ -764,7 +765,8 @@ margin:0
 }
 }
 @media (max-width:767px)
-{
+{    #intro {
+  margin-top: 0px;}
 .site-footer
 {
   padding-bottom:0

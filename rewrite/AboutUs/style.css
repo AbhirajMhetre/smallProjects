@@ -124,26 +124,12 @@
     transition:0.5s;
   }
   
-  /* Page content */
   
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed !important;
-    top: 0 !important;
-    width: 100%;
-    height: 70px !important;
-    background-color:white !important;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
+
   
   /* NAVBAR CSS */
   
-  #navbar2
+ #navbar2
   {
     height: 70px;
   }
@@ -454,7 +440,12 @@
    .overlay{
      padding-left: 30px;
    }
+   .overlay .closebtn {
+    top: 20px;
+   left:60%;
+    font-size: 60px !important;
   }
+  } 
      
            
   /* NAVBAR END */
@@ -956,6 +947,13 @@ a.cta {
 }
 form{
   margin:0px 60px;
+}
+@media(max-width:700px){
+  .site-footer form{
+    margin: 5px;
+
+    width: 100%;
+  }
 }
 
 .parallax label{

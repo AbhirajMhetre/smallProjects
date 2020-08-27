@@ -1306,8 +1306,14 @@ body {
   padding-top: 40px;
  
 }
-form{
+.site-footer form{
   margin:0px 60px;
+}
+@media(max-width:700px){
+  .site-footer form{
+    width: 100%;
+    margin-left: 5px;
+  }
 }
 
 .parallax label{
