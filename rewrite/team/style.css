@@ -4,6 +4,10 @@
     overflow: hidden;
   
   }
+  #logo{
+    height: 70px;
+    width: auto;
+  }
   
   /* Navbar links */
   #navbar a {
@@ -105,27 +109,11 @@
               .ftco-navbar-light .container {
                 background: #fff;
                 border-radius: 4px; } }
-          .ftco-navbar-light .navbar-brand {
-            color: black;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-            font-size: 25px;
-           }
-            .ftco-navbar-light .navbar-brand span {
-              color: #ffa41b; }
+
   
            
-            .ftco-navbar-light .navbar-brand {
-              color: #090f35; }
-              .ftco-navbar-light .navbar-brand:hover {
-                color:#090f35;
-                font-size: 27px;
-              }
+
             @media (max-width: 991.98px) {
-              .ftco-navbar-light .navbar-brand {
-                color: black;
-                padding-top: 1rem;
-                padding-bottom: 1rem; }
                 
                   .overlay a {
                     font-size: 25px !important;
@@ -1261,17 +1249,19 @@ button {
   width: 212px;
   height: 100px;
   box-sizing: content-box;
-  margin-left: 80%;
+  margin-left: auto;
+  margin-right: 0px;
+
 }
 #meet{
   background-color:rgb(74, 74, 74);
   position: relative;
-  margin-left: 80%;
+ width: 100%;
+  text-align: right;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 500;
   color:white;
-  width: fit-content;
   padding: 10px;
 
 }

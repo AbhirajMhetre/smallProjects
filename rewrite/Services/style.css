@@ -1,6 +1,8 @@
-   body{
-    background-color: #202224;
-   }
+#logo{
+  height: 70px;
+  width: auto;
+  float: left;
+}
    /* Style the navbar */
    #navbar {
     overflow: hidden;

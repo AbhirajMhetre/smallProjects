@@ -1,7 +1,10 @@
-  body{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    background-color: #202224;
+
+
+  @font-face {
+    font-family: Muli;
+    src: url(../muli/Muli-Regular.ttf);
   }
+
 
 /* POPUP LONDON BRANCH  */
 
@@ -127,6 +130,13 @@
 
   
   /* NAVBAR CSS */
+
+  #logo{
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-left: -25px;
+  }
   
  #navbar2
   {
@@ -749,7 +759,7 @@ section h3.section-subheading {
   left: 0;
   width: 80px;
   height: 80px;
-  margin-left: 0;
+  margin-left: 10px;
   border: 7px solid #f1f1f1;
   border-radius: 100%;
   text-align: center;
@@ -1204,6 +1214,7 @@ body {
   text-align: left;
   padding: 40px;
   font-size: 1.2rem;
+  font-family: 'Muli';
 }
 
 .row .heading{
@@ -1360,6 +1371,14 @@ body {
   position: relative;
   top: 80px;
   font-size: 120%;
+  
+}
+.card-text h3{
+  font-family: 'Fredoka One', cursive;
+}
+.card-text p{
+  font-family: 'Muli';
+
 }
 .card:hover {
   border-radius: 50px;
@@ -1412,7 +1431,7 @@ a {
   width: 100%;
   overflow-y: hidden;
   height: 700px;
-  margin: 50px 0px;
+  margin: 50px 0px 0px 0px;
 }
 .heading{
   color: #ffa41b;
@@ -1679,7 +1698,7 @@ input[type=file]{
 
 .site-footer
 {
-margin-top: 50px;
+margin-top: 20px;
 background-color:#26272b;
 padding:45px 0 20px;
 font-size:15px;

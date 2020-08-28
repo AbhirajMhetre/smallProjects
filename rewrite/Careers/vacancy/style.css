@@ -14,7 +14,12 @@
   padding: 15px;
   border-radius: 4px;
 }
-
+#logo{
+  height: 70px;
+  width: auto;
+  margin-left: -20px;
+  float: left;
+}
 
 
    /* Style the navbar */
@@ -382,7 +387,6 @@
 
 
 body{
-  background-color: #202224;
     font-family: "Nunito", sans-serif;
 }
 @media only screen and (max-device-width: 1024px){

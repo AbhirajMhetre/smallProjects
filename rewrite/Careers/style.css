@@ -14,7 +14,12 @@
     padding: 15px;
     border-radius: 4px;
   }
-  
+  #logo{
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-left: -20px;
+  }
   
    /* Style the navbar */
    #navbar {
@@ -369,7 +374,6 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #202224;
   }
   
 
@@ -1061,6 +1065,12 @@ body {
    
    }
 
+   #contact .text-muted {
+    color: #ffffff!important;
+}
+
+
+
     /* different techniques for iPad screening */
    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
     /* For portrait layouts only */
@@ -1181,7 +1191,6 @@ input[type=file]{
 
 .site-footer
 {
-margin-top: 50px;
 background-color:#26272b;
 padding:45px 0 20px;
 font-size:15px;
