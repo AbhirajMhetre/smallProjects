@@ -1,4 +1,6 @@
-   
+   body{
+    background-color: #202224;
+   }
    /* Style the navbar */
    #navbar {
     overflow: hidden;

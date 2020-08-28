@@ -382,6 +382,7 @@
 
 
 body{
+  background-color: #202224;
     font-family: "Nunito", sans-serif;
 }
 @media only screen and (max-device-width: 1024px){
