@@ -8,6 +8,7 @@
     overflow: hidden;
   
   }
+
   
   /* Navbar links */
   #navbar a {
@@ -352,10 +353,15 @@
     top: 15px;
     right: 35px;
     }
+
   }
   @media (max-width: 600px){
    .overlay{
      padding-left: 30px;
+   }
+   #Services img{
+     height: 120px;
+     width: 90px;
    }
   }
      
@@ -379,7 +385,6 @@ h1{
 }
 
 #Services .container-fluid{
-    margin: 70px 200px 50px 5%;
     padding-right: 10%;
 }
 #Services .service-info{

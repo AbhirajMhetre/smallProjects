@@ -872,3 +872,8 @@ background-color:#ea4c89
 .site-footer img{
   width: 100px;
 }
+
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}

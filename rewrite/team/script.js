@@ -74,10 +74,10 @@ $(function () {
   $(".trigger1").hover(
     function (e) {
       $("div#pop-up1").show();
-    },
-    function () {
-      $("div#pop-up1").hide();
+    },function(){
+      $("div#pop-up1").delay(1000).hide(0);
     }
+
   );
 
   $(".trigger1").mousemove(function (e) {
