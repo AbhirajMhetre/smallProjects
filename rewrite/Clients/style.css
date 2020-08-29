@@ -598,10 +598,14 @@ h1{
   background-clip: padding-box;
   border: 10px solid transparent;
 }
+#clientcounter{
+  background-color: #dedede;
+
+}
 .counter { 
   
   margin: 2rem 0rem;
-  background-color: #dedede;; 
+
   padding: 2rem 0px; 
   border-radius: 5px;
  
@@ -682,6 +686,7 @@ h1{
   top: 0;
   left: 0;
   border-radius: 15px;
+  padding: 15px;
 }
 .card .info {
   position: relative;
@@ -701,7 +706,7 @@ h1{
 }
 .card .info p {
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 8px;
 }
 .card .info button {

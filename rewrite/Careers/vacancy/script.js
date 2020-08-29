@@ -162,7 +162,7 @@ ref.on("value", function(snapshot) {
               '<div class="row">'+
                 '<div class="col-lg-12 text-center">'+
                   '<h2 class="section-heading">Apply Now!!</h2>'+
-                  '<h3 class="section-subheading text-muted">Be a part of the Inator team.</h3>'+
+                  '<h3 class="section-subheading text-muted">Be a part of Inator team.</h3>'+
                 '</div>'+
               '</div>'+
               '<div class="row">'+
@@ -215,7 +215,7 @@ ref.on("value", function(snapshot) {
                 '<div>'+
                   
                   '<form>'+
-                    '<h6>Contact Us</h6>'+
+                    '<h6>Ask Queries</h6>'+
                     '<label for="fname">Full Name</label>'+
                     '<input type="text" id="fname" name="firstname" placeholder="Your name..">'+
                 
