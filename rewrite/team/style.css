@@ -377,6 +377,7 @@
           width: 100px;
           height: 100px;
           border-radius: 50%;
+          object-fit: cover;
           
         }
         .profile-name{
@@ -411,6 +412,9 @@
         #pop-up15{display: none;}
         #pop-up16{display: none;}
         #pop-up17{display: none;}
+        #pop-up18{display: none;}
+
+        
         h1,
         h2 {
           font-weight: 500;

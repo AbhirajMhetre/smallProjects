@@ -428,6 +428,35 @@ $(function () {
   var moveLeft = 20;
   var moveDown = 10;
 
+  $(".trigger18").hover(
+    function (e) {
+      $("div#pop-up18").show();
+    },
+    function () {
+      $("div#pop-up18").hide();
+    }
+  );
+
+  $(".trigger18").mousemove(function (e) {
+    $("div#pop-up18")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
   $("#pop-up1").hover(
     function (e) {
       $("div#pop-up1").show();
@@ -775,6 +804,27 @@ $(function () {
 
   $("#pop-up17").mousemove(function (e) {
     $("div#pop-up17")
+      .css("top", e.pageY + moveDown)
+      .css("left", e.pageX + moveLeft);
+  });
+});
+
+
+$(function () {
+  var moveLeft = 20;
+  var moveDown = 10;
+
+  $("#pop-up18").hover(
+    function (e) {
+      $("div#pop-up18").show();
+    },
+    function () {
+      $("div#pop-up18").hide();
+    }
+  );
+
+  $("#pop-up18").mousemove(function (e) {
+    $("div#pop-up18")
       .css("top", e.pageY + moveDown)
       .css("left", e.pageX + moveLeft);
   });

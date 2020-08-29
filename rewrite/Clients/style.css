@@ -538,31 +538,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .mainheading{
   height: 5rem; 
   padding-top: 5rem; 
@@ -581,7 +556,7 @@ font-family: 'Markazi Text', serif;
 
 @media (max-width: 700px){
   #saviour{
-    height: 238rem !important;
+    height: 195rem !important;
   }
 #cardsid{
     margin-left: auto;
@@ -606,10 +581,6 @@ font-family: 'Markazi Text', serif;
 
 /* counter */
 
-/* h4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-} */
 .wrapper{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -630,7 +601,7 @@ h1{
 .counter { 
   
   margin: 2rem 0rem;
-  background-color: #ffffff; 
+  background-color: #dedede;; 
   padding: 2rem 0px; 
   border-radius: 5px;
  
