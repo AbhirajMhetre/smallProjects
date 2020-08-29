@@ -414,7 +414,7 @@
         #pop-up17{display: none;}
         #pop-up18{display: none;}
 
-        
+
         h1,
         h2 {
           font-weight: 500;
@@ -502,6 +502,7 @@
         }
         
         .profile-card header a > img {
+          object-fit: cover;
           width: 120px;
           height: 120px;
           max-width: 100%;

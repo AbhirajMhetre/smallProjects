@@ -46,8 +46,9 @@ function scrollFunction() {
 
 //   AOS EFFECTS
 AOS.init({
-    duration: 1200
-  });
+  duration: 1200, 
+  once:true
+});
 
 
 
