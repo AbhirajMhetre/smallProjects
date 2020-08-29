@@ -1291,16 +1291,16 @@ body {
   margin: 2rem;
 }
 #card1{
-  background-image: url("https://image.freepik.com/free-vector/teamwork-concept-landing-page_23-2148211326.jpg");
+  background-image: url(../icons/teamwork.jpg);
 }
 #card2{
   background-image: url("https://image.freepik.com/free-vector/work-time-concept-illustration_114360-1074.jpg");
 }
 #card3{
-  background-image: url("https://image.freepik.com/free-vector/business-deal_52683-6265.jpg");
+  background-image: url(../icons/commitement.png);
 }
 #card4{
-  background-image: url("https://image.freepik.com/free-vector/graphic-designer-workplace_23-2148099893.jpg");
+  background-image: url(../icons/passion.png);
 }
 #card5{
   background-image: url("https://image.freepik.com/free-vector/online-courses-concept_23-2148524391.jpg");
