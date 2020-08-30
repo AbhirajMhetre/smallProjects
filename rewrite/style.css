@@ -135,6 +135,9 @@ html,body{
     padding-top: 0% !important;
 
   }
+
+
+
 }
  .pagination {
    display: none;
@@ -2127,7 +2130,7 @@ h6,
 @media (max-width: 699px) {
   .c-header-home_controls,
   .c-header-home_buttons {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 }
 @media (min-width: 700px) {
