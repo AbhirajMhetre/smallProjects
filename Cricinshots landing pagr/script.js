@@ -1,3 +1,20 @@
+function hide(obj) {
+
+  var el = document.getElementById(obj);
+
+      el.style.display = 'none';
+
+}
+function show(obj) {
+
+  var el = document.getElementById(obj);
+
+      el.style.display = 'block';
+
+}
+
+  
+  
   //slider js
   $(document).ready(function () {
     var $slider = $(".slider"),

@@ -12,15 +12,75 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
   font-family: "Questrial", "Helvetica Neue", Arial, sans-serif;
 
   color: #d3d3d3;
-  webkit-tap-highlight-color: #222;
 }
+
+/* 
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 3;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+} */
+
 
 hr {
   max-width: 80px;
   border-width: 3px;
   opacity: 0.09;
-  margin-top: 15px;
-  margin-bottom: 15px;
+
+  margin: 15px auto;
 }
 
 hr.light {
@@ -415,63 +475,18 @@ h3{
     font-size: 20px;
   }
 
-  @media only screen and (max-device-width: 480px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-    header .header-content .inner h1 {
-        letter-spacing: 7px;
-        font-size: 19px;
-        margin-bottom: 20px;
-    }
-    header .header-content {
-        top: 124px;
-    }
-    .inner h4 {
-        font-size: 11px;
-    }
-    .btn-xl {
-        padding: 5px 10px;
-        font-size: 14px;
-    }
-    .navbar-brand {
-        font-size: 13px;
-    }
-    #first hr{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-   
-   }
-   
-   
-    /* different techniques for iPad screening */
-   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    /* For portrait layouts only */
-  
-    }
-    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-      /* For landscape layouts only */
-    
-      }
-
-  @media only screen and (min-width: 960px) {
-    /* styles for browsers larger than 960px; */
-  
-  }
-  @media only screen and (min-width: 1440px) {
-    /* styles for browsers larger than 1440px; */
-
-  }
-  @media only screen and (min-width: 2000px) {
-    /* for sumo sized (mac) screens */
  
-  }
 
-  @media only screen and (device-width: 768px) {
-   /* default iPad screens */
-  
-  }
-
-
+/* ABOUT SECTION */
+#aboutintro{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+#aboutpara p{
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+}
 
   /* SLIDER */
   @font-face {
@@ -739,7 +754,6 @@ h3{
     }
   }
   .slide__text-heading {
-    font-family: "Polar", Helvetica, Arial, sans-serif;
     font-size: 5rem;
     margin-bottom: 2rem;
   }
@@ -750,7 +764,6 @@ h3{
     }
   }
   .slide__text-desc {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
   }
@@ -936,6 +949,42 @@ img::-moz-selection {
 
 
 /* SCORECARD CSS */
+#open-score{
+  background-image: url("pictures/open-score.png");
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  float: right;
+  z-index: 10;
+  width: 70px;
+  height: 70px;
+  margin: 50px;
+  font-weight: 800;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 17px;
+  cursor: pointer;
+
+}
+
+#scorecard #live{
+  height: 2rem;
+  float: left;
+}
+#score-subheading{
+  margin-bottom: 10px;
+}
+#score-subheading span {
+  float: right;
+  font-size: 20px;
+  margin-right: 11px;
+  cursor: pointer;
+  
+}
+
 #scorecard{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 700;
@@ -1013,7 +1062,7 @@ img::-moz-selection {
   height: 100%;
 }
 #features .col-md-4{
-  padding: 20px 20px;
+  padding: 75px 20px;
 }
 
 
@@ -1023,8 +1072,95 @@ img::-moz-selection {
   margin: 100px auto;
 }
 #download a{
-  margin: 10px 50px;
+  margin: 50px 50px;
 }
+
+
+
+
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  header .header-content .inner h1 {
+      letter-spacing: 7px;
+      font-size: 19px;
+      margin-bottom: 20px;
+  }
+  header .header-content {
+      top: 124px;
+  }
+  .inner h4 {
+      font-size: 11px;
+  }
+  .btn-xl {
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+  .navbar-brand {
+      font-size: 13px;
+  }
+  #first hr{
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+ 
+/* SCORECARD CSS */
+#scorecard{
+  font-weight: 700;
+  width: 90%;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+
+}
+#scorecard img{
+  height: 30px;
+  width: 30px;
+}
+
+#current-score{
+  margin-top: 15px;
+}
+
+
+ }
+ 
+ 
+  /* different techniques for iPad screening */
+ @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+
+  }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+  
+    }
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+
+}
+
+@media only screen and (device-width: 768px) {
+ /* default iPad screens */
+
+}
+
+
+
+
+
+
 
 
 

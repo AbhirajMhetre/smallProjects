@@ -11,6 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <body>
+
+
+<!-- SCROLL DOWN SYMBOL -->
+    <!-- <a href="#aboutapp" id="scroll" class="scroll-down" address="true"></a> -->
+
    
 
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
@@ -27,19 +32,19 @@
           <div class="navbar-collapse collapse" id="bs-navbar">
             <ul class="nav navbar-nav">
               <li>
-                <a class="page-scroll" href="#one">Home</a>
+                <a class="page-scroll" href="#first">Home</a>
               </li>
               <li>
-                <a class="page-scroll" href="#two">Features</a>
+                <a class="page-scroll" href="#features">Features</a>
               </li>
               <li>
                 <a class="page-scroll" href="#three">Gallery</a>
               </li>
               <li>
-                <a class="page-scroll" href="#four">Download</a>
+                <a class="page-scroll" href="#download">Download</a>
               </li>
               <li>
-                <a class="page-scroll" href="#last">Contact</a>
+                <a class="page-scroll" href="#contact">Contact</a>
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -57,15 +62,16 @@
             <h1>CricInShots</h1>
             <h4>Unlock Better Cricketing Experience, by Inator LLP</h4>
             <hr>
-            <a href="#" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Presentation</a> &nbsp; 
-            <a href="#" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+            <a href="https://cricinshots.com/presentation/" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Presentation</a> &nbsp; 
+            <a href="#" class="btn btn-primary btn-xl page-scroll">Download App</a>
           </div>
         </div>
  </header>
 
-
+<div onClick="show('scorecard')" id="open-score">SCORE</div>
 <div id="scorecard">
-  <div>Match 23, Today 7:30pm</div>
+  
+  <div id="score-subheading"><img id="live" src="pictures/live2.png" alt="">Match 23, Today 7:30pm <span onClick="hide('scorecard')">X</span></div>
   <div id="left-card" class="col-xs-4">
     <img src="pictures/csklogo.png" alt="">
     <div >CSK</div>
@@ -114,12 +120,12 @@
 <div id="aboutapp" class="container">
   <h3>About App</h3>
   <hr class="style-one">
-  <p>A visual representation of cricket that will make you ponder the pace of cricket. <br> An Augmented reality, real-time, immersive Cricketing Experience.</p>
+  <p id="aboutintro">A visual representation of cricket that will make you ponder the pace of cricket. <br> An Augmented reality, real-time, immersive Cricketing Experience.</p>
   <div class="row">
     <div class="col-md-6 col-xs-12">
       <img src="pictures/aboutapp.png" alt="">
     </div>
-    <div class="col-md-6 col-xs-12">
+    <div id="aboutpara" class="col-md-6 col-xs-12">
       <p>In a world of fast action and lives lived in the fast lane, why be stuck with the slow pace of cricket on TV or the dreary text of Cricket Commentary? What if you could see and understand, in a glance, what each ball in a game means, no reading text or waiting for players to move. Follow the action at your own pace and be freed of the anchor that is a TV or match video.</p>
     <p>The CricInShots app visualizes each ball in a game to get you a picture of the field and the action on it. In a few seconds and a single glance, you will know how many runs, where the ball went and who was on the pitch.    </p>
       </div>
@@ -194,9 +200,9 @@
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
         <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 1</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-          <a class="slide__text-link">Project link</a>
+          <h2 class="slide__text-heading">Why CricInShots</h2>
+          <p class="slide__text-desc">In this chaotic world, we really don't have time left for our first love cricket.Inator presents to you CricInShots, to keep in touch with all the special moments and acts on the field in a short to you anywhere.</p>
+          <a class="slide__text-link">Some link</a>
         </div>
       </div>
     </div>
@@ -207,8 +213,11 @@
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
         <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 2</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+          <h2 class="slide__text-heading">Live stream the cheering of the fans directly on the stadium!</h2>
+          <p class="slide__text-desc">With CricInShots, external speakers along with
+            other user devices will be able to stream various
+            pre-decided sounds / music / tunes whenever a
+            user clicks on ‘cheer’ in the CricInShots app</p>
           <a class="slide__text-link">Project link</a>
         </div>
       </div>
@@ -220,8 +229,12 @@
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
         <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 3</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+          <h2 class="slide__text-heading">Photo Corner</h2>
+          <p class="slide__text-desc">Bring your favourite player
+            right into your living room!
+            What's more fun than a
+            photo opportunity with
+            your favourite player?</p>
           <a class="slide__text-link">Project link</a>
         </div>
       </div>
@@ -233,8 +246,8 @@
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
         <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 4</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+          <h2 class="slide__text-heading">Ads Integration</h2>
+          <p class="slide__text-desc">Non intrusive and engaging Ads with guaranteed impressions</p>
           <a class="slide__text-link">Project link</a>
         </div>
       </div>
@@ -269,7 +282,7 @@
           <div class="col-xs-12 col-md-6 item" data-aos="slide-up">
             <div>
               
-              <form>
+              <form id="contact">
                 <h6>Contact Us</h6>
                 <label for="fname">Full Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
