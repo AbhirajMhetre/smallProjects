@@ -47,16 +47,11 @@
                 <a class="page-scroll" href="#contact">Contact</a>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
-              </li>
-            </ul>
           </div>
         </div>
       </nav>
       <header id="first">
-          <img src="pictures/bgimg.png" alt="">
+        <img src="pictures/bgimg.png" alt="">
         <div class="header-content">
           <div class="inner">
             <h1>CricInShots</h1>
@@ -69,9 +64,10 @@
  </header>
 
 <div onClick="show('scorecard')" id="open-score">SCORE</div>
+
+  <!-- SCORECARD -->
 <div id="scorecard">
-  
-  <div id="score-subheading"><img id="live" src="pictures/live2.png" alt="">Match 23, Today 7:30pm <span onClick="hide('scorecard')">X</span></div>
+  <!-- <div id="score-subheading"><img id="live" src="pictures/live2.png" alt="">Match 23, Today 7:30pm <span onClick="hide('scorecard')">X</span></div>
   <div id="left-card" class="col-xs-4">
     <img src="pictures/csklogo.png" alt="">
     <div >CSK</div>
@@ -85,7 +81,7 @@
     <div>ABD- 94(49)</div>
     <div>Kohli- 59(40)</div>
   </div>
-  <div>CSK needs 24 runs in 9 balls to win.</div>
+  <div>CSK needs 24 runs in 9 balls to win.</div> -->
 </div>
 
 <div class="service-area">
@@ -200,7 +196,7 @@
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
         <div class="slide__text">
-          <h2 class="slide__text-heading">Why CricInShots</h2>
+          <h2 class="slide__text-heading">Why CricInShots?</h2>
           <p class="slide__text-desc">In this chaotic world, we really don't have time left for our first love cricket.Inator presents to you CricInShots, to keep in touch with all the special moments and acts on the field in a short to you anywhere.</p>
           <a class="slide__text-link">Some link</a>
         </div>
@@ -266,8 +262,8 @@
         <p>Our app is available for all devices.</p>
     </div>
     <div >
-      <!-- <a href="" class="btn btn-primary btn-xl"><i class="fa fa-apple"> App Store</i></a>
-      <a href="" class="btn btn-primary btn-xl"><i class="fa fa-windows "> Windows</i></a> -->
+      <a href="" class="btn btn-primary btn-xl"><i class="fa fa-apple"> App Store</i></a>
+      <a href="" class="btn btn-primary btn-xl"><i class="fa fa-windows "> Windows</i></a>
       <a href="" class="btn btn-primary btn-xl"><i class="fa fa-android"> Play Store</i></a>
     </div>
   </div>
@@ -354,8 +350,33 @@
     </footer>
 
 
-
-     
+<!-- FIREBASE CONNECT -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+  
+    var firebaseConfig = {
+      apiKey: "AIzaSyAOsrpyIyEE2ETSjsv_CpXCJurEk_R7CL8",
+      authDomain: "cricinshots-debug.firebaseapp.com",
+      databaseURL: "https://cricinshots-debug.firebaseio.com",
+      projectId: "cricinshots-debug",
+      storageBucket: "cricinshots-debug.appspot.com",
+      messagingSenderId: "741549579192",
+      appId: "1:741549579192:web:9b114d3ac33a0db76ccd4d",
+      measurementId: "G-LT96KRT59X"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  
+   
       <!--scripts loaded here from cdn for performance -->
  
    

@@ -175,6 +175,8 @@ footer {
 .show{
   background-color:#282828eb;
 }
+
+
 .navbar-default {
   border-color: rgba(35, 35, 35, 0.05);
   font-family: "Questrial", "Helvetica Neue", Arial, sans-serif;
@@ -486,6 +488,7 @@ h3{
   font-size: 2rem;
   font-weight: 400;
   text-align: left;
+  line-height: 4rem;
 }
 
   /* SLIDER */
@@ -682,7 +685,7 @@ h3{
   }
   .slide:nth-child(4) .slide__bg {
     left: -150%;
-    background-image: url("https://i.pinimg.com/564x/8c/79/3a/8c793a5ea14b8fb68b7b632b75db19c3.jpg");
+    background-image: url("pictures/sliderimg4.jpg");
   }
   .slide:nth-child(4) .slide__overlay-path {
     fill: #cbc6c3;
@@ -990,16 +993,17 @@ img::-moz-selection {
   font-weight: 700;
   text-align: center;
   width: 30%;
-  height: auto;
-  background-image: linear-gradient(to top left,#ff8a00,#e52e71)!important;
-  color: white;
+ height: auto;
+border: red solid 2px;
+  background-color: white;
+  color: black;
   padding: 10px;
   position: absolute;
   bottom: 30px;
   right: 30px;
   z-index: 15;
   border-radius: 25px;
-  border: white solid 2px;
+  /* border: linear-gradient(to top left,#ff8a00,#e52e71) solid 2px; */
 
 }
 #scorecard img{
@@ -1081,6 +1085,10 @@ img::-moz-selection {
 
 @media only screen and (max-device-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  #first img {
+    background-image: url("https://i.pinimg.com/474x/bb/60/90/bb60903e796a32107b615431a061bd2b.jpg")
+  }
   header .header-content .inner h1 {
       letter-spacing: 7px;
       font-size: 19px;
