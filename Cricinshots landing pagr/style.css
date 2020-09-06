@@ -4,7 +4,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
   background: #0575E6;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -16,6 +15,7 @@ background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, F
 
 
 .scroll-down {
+  overflow: hidden;
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;
   transition: all .5s ease-in 3s;
@@ -173,7 +173,7 @@ footer {
   padding: 0;
 }
 .show{
-  background-color:#1c2431;
+    background-color: #08111d;
 }
 
 
@@ -411,6 +411,7 @@ h3{
   }
   
   .slider-container {
+    overflow: hidden;
     position: relative;
     height: 100%;
     -webkit-user-select: none;
@@ -616,6 +617,9 @@ h3{
     opacity: 0;
   }
   @media (max-width: 991px) {
+    html, body{
+      overflow-x: hidden;
+    }
     .slide__overlay {
       display: none;
     }
@@ -661,7 +665,7 @@ h3{
   @media (max-width: 991px) {
     .slide__text-heading {
       line-height: 20rem;
-      font-size: 3.5rem;
+      font-size: 2.5rem;
     }
   }
   .slide__text-desc {
@@ -854,7 +858,7 @@ img::-moz-selection {
   background-image: url("pictures/open-score.png");
   background-size: contain;
   background-position: center;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   right: 0;
   float: right;
@@ -896,7 +900,7 @@ border: red solid 2px;
   background-color: white;
   color: black;
   padding: 10px;
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   right: 30px;
   z-index: 15;
