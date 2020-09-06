@@ -173,7 +173,7 @@ footer {
   padding: 0;
 }
 .show{
-    background-color: #08111d;
+    background-color: #1c2431;
 }
 
 
@@ -266,6 +266,8 @@ h3{
   }
 
   header .header-content .inner h1 {
+    max-width: fit-content;
+    margin: auto;
     transform: scale(1.8, 2);
     letter-spacing: 26px;
     font-size: 80px;
@@ -664,19 +666,16 @@ h3{
   }
   @media (max-width: 991px) {
     .slide__text-heading {
-      line-height: 20rem;
-      font-size: 2.5rem;
+      font-size: 1.6rem;
+      color: #bb6c4a;
+      padding-top: 10px;
     }
   }
   .slide__text-desc {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
   }
-  @media (max-width: 991px) {
-    .slide__text-desc {
-      display: none;
-    }
-  }
+
   .slide__text-link {
     z-index: 5;
     display: inline-block;
@@ -997,8 +996,11 @@ border: red solid 2px;
   #mainimg{
     display: none;
   }
-  .btn.btn-primary{
+  #first .btn.btn-primary{
     background-color: #0b1525c7;
+}
+#download .btn.btn-primary{
+font-size: 1.5rem;
 }
 .scroll-down {
   bottom: 10%;

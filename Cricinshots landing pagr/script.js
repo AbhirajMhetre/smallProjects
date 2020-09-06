@@ -1,6 +1,5 @@
 //navbar
 $(window).scroll(function() {    
-  console.log("shdh");
   var scroll = $(window).scrollTop();
 
    //>=, not <=
@@ -35,19 +34,6 @@ function show(obj) {
       el.style.display = 'block';
 
 }
-
-
-//navbar
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-
-
-
-
-
-
-
-
-
 
  //slider js
  $(document).ready(function () {
@@ -184,75 +170,78 @@ function show(obj) {
 
 
 //firebase scorecard
-// var database = firebase.database();
-// var flag=0;
+var database = firebase.database();
+var flag=0;
 
 
 
-// async function liveData(){
-//   let respo=await axios.get('https://rest.entitysport.com/v2/matches/?status=3&token=179b91399ba70939285b7ff479269eb9');
-//   var doc=respo.data;
-//   return doc;
-//   }
+async function liveData(){
+  let respo=await axios.get('https://rest.entitysport.com/v2/matches/?status=3&token=179b91399ba70939285b7ff479269eb9');
+  var doc=respo.data;
+  if(doc.response.items[0].commentary!==1 && doc.response.items[0].wagon!==1){
+    flag=1;
+  }
+  //console.log(doc.response.items[0]);
+  return doc;
+  }
+  
 
-// liveData().then((doc)=>{
-//   var i=0;
+liveData().then((doc)=>{
+  var i=0;
  
-//   if(doc.response.items.length){
+  if(doc.response.items.length){
   
-//   while(doc.response.items[i].commentary!==1&&doc.response.items[i].wagon!==1){
-//     i++;
-//   }
-//   if(i===doc.response.items.length+1){
-//       flag=1;
-//   }else{
-//     flag=2;
-//   }
+  while(doc.response.items[i].commentary!==1&&doc.response.items[i].wagon!==1){
+    i++;
+  }
+  if(i===doc.response.items.length+1){
+      flag=1;
+  }else{
+    flag=2;
+  }
   
-//   }else{
-//   console.log('No live matches');
-//     //No live match..
-//   }
-//   if(flag===2){
-//   console.log(doc.response.items[i]);
-//   }
-//   if(flag===1){
-//   console.log("No live matches with active wagon and/or commentary...");
-//   }
-//   })
+  }else{
+  console.log('No live matches');
+    //No live match..
+  }
+  if(flag===2){
+  //console.log(doc.response.items[i]);
+  }
+  if(flag===1){
+  console.log("No live matches with active wagon and/or commentary...");
+  }
+  })
 
 
 
-// database.ref('/Matches/111079-37788/matchdetails/match').once('value').then((snap)=>{
+database.ref('/Matches/111079-37788/matchdetails/match').once('value').then((snap)=>{
+var card =    '<div id="score-subheading">';
 
 
-// var card =    '<div id="score-subheading">';
-
-
-//              if(flag==2){
-//               card += '<img id="live" src="pictures/live2.png" alt="">';
-//              }               
+             if(flag==1){
+              card += '<img id="live" src="pictures/live2.png" alt="">';
+             }               
              
              
-//              card += 'Match 23, Today 7:30pm <span onClick="hide("scorecard")">X</span></div>'+
-//                     '<div id="left-card" class="col-xs-4">'+
-//                       '<img src=" ' + snap.val().Team1.logoUrl +'" alt="">'+
-//                       '<div >' + snap.val().Team1.name  + '</div>'+
-//                       '<div>Rahim- 49*(19)</div>'+
-//                       '<div>Hasan- 29(10)</div>'+
-//                     '</div>'+
-//                     '<div id="current-score" class="col-xs-4">' + snap.val().Team1.name + snap.val().scores.Team2score +'<br>('+ snap.val().scores.Team2overs + 'overs)</div>'+
-//                     '<div id="right-card" class="col-xs-4">'+
-//                      '<img src=" ' + snap.val().Team2.logoUrl + ' " alt="">'+
-//                       '<div>'+ snap.val().Team2.name +'</div>'+
-//                       '<div>Sharma- 94(49)</div>'+
-//                       '<div>Kohli- 59(40)</div>'+
-//                     '</div>'+
-//                     '<div>'+ snap.val().matchSummaryText +'</div>';
+             card += snap.val().name + '<span onClick="hide(\'scorecard\')">X</span></div>'+
+                    '<div class="row">'+
+                      '<div id="left-card" class="col-6">'+
+                        '<img src=" ' + snap.val().Team1.logoUrl +'" alt="">'+
+                        '<div >' + snap.val().Team1.name  + '</div>'+
+                        '<div>'+ snap.val().scores.Team1score +' (' + snap.val().scores.Team1overs +')' +'</div>'+
+                      '</div>'+
+                      //'<div id="current-score" class="col-4">' + snap.val().Team1.name + snap.val().scores.Team2score +'<br>('+ snap.val().scores.Team2overs + 'overs)</div>'+
+                      '<div id="right-card" class="col-6">'+
+                        '<img src=" ' + snap.val().Team2.logoUrl + ' " alt="">'+
+                        '<div>'+ snap.val().Team2.name +'</div>'+
+                        '<div>'+ snap.val().scores.Team2score +' (' + snap.val().scores.Team2overs +')'  +'</div>'+
+                      '</div>'+
+                      '</div>'+
+                    '<div>'+ snap.val().matchSummaryText +'</div>';
 
-//                     $('#scorecard').append(card);
+                    $('#scorecard').append(card);
 
-// });
+});
 
 
 
