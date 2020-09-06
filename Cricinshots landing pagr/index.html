@@ -6,82 +6,97 @@
     <title>CrinInshots</title>
 </head>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <body>
 
+<!-- Navbar -->
 
-<!-- SCROLL DOWN SYMBOL -->
-    <!-- <a href="#aboutapp" id="scroll" class="scroll-down" address="true"></a> -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container-fluid">
 
-   
+    <!-- Brand -->
+    <a class="navbar-brand" href="#" target="_blank">
+      <strong>CricInShots</strong>
+    </a>
 
-    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i>CricInShots</a>
-          </div>
-          <div class="navbar-collapse collapse" id="bs-navbar">
-            <ul class="nav navbar-nav">
-              <li>
-                <a class="page-scroll" href="#first">Home</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#features">Features</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#three">Gallery</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#download">Download</a>
-              </li>
-              <li>
-                <a class="page-scroll" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <!-- Collapse -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Left -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutapp">About App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#download">Download</a>
+        </li>
+      </ul>
+
+
+
+    </div>
+
+  </div>
+</nav>
+<!-- Navbar -->
+ 
+
+  
       <header id="first">
-        <img src="pictures/bgimg.png" alt="">
+        <img id="mainimg" src="pictures/bgimg.png" alt="">
         <div class="header-content">
           <div class="inner">
             <h1>CricInShots</h1>
             <h4>Unlock Better Cricketing Experience, by Inator LLP</h4>
             <hr>
-            <a href="https://cricinshots.com/presentation/" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Presentation</a> &nbsp; 
+            <a href="https://cricinshots.com/presentation/"  class="btn btn-primary btn-xl">Presentation</a> &nbsp; 
             <a href="#" class="btn btn-primary btn-xl page-scroll">Download App</a>
           </div>
         </div>
  </header>
+ 
+
+  <a href="#aboutapp" class="scroll-down" address="true"></a>
 
 <div onClick="show('scorecard')" id="open-score">SCORE</div>
 
   <!-- SCORECARD -->
 <div id="scorecard">
-  <!-- <div id="score-subheading"><img id="live" src="pictures/live2.png" alt="">Match 23, Today 7:30pm <span onClick="hide('scorecard')">X</span></div>
-  <div id="left-card" class="col-xs-4">
-    <img src="pictures/csklogo.png" alt="">
-    <div >CSK</div>
-    <div>Dhoni- 49*(19)</div>
-    <div>Jadeja- 29(10)</div>
+  <div id="score-subheading">Nidahas Trophy, T20 2-5 <span onClick="hide('scorecard')">X</span></div>
+<div class="row">
+  <div id="left-card" class="col-4">
+    <img src="https://cricket.entitysport.com/assets/uploads/2016/01/bangladesh.png" alt="">
+    <div >Bangladesh</div>
+    <div>Rahim- 49*(19)</div>
+    <div>Hasan- 29(10)</div>
   </div>
-  <div id="current-score" class="col-xs-4">CSK 190-6 <br>(18.3 overs)</div>
-  <div id="right-card" class="col-xs-4">
-    <img src="pictures/milogo.png" alt="">
-    <div >MI</div>
-    <div>ABD- 94(49)</div>
+  <div id="current-score" class="col-4">India 190-4 <br>(18.4 overs)</div>
+  <div id="right-card" class="col-4">
+    <img src="https://cricket.entitysport.com/assets/uploads/2016/01/india.png" alt="">
+    <div >India</div>
+    <div>Sharma- 94(49)</div>
     <div>Kohli- 59(40)</div>
   </div>
-  <div>CSK needs 24 runs in 9 balls to win.</div> -->
+</div>
+  <div>India won by 6 wickets (with 8 balls remaining)
+  </div>
 </div>
 
 <div class="service-area">
@@ -152,7 +167,7 @@
     <div class="col-md-4">
       <div class="col-xs-4"><img src="pictures/groung.png" alt=""></div>
       <div class="col-xs-8">
-        <div class="feature-heading">We re-invented the Wagon wheel!</div>
+        <div class="feature-heading">Wagon wheel!</div>
         <div class="feature-para">Watch 2D animation of every ball of the game live!</div>
       </div>
     </div>
@@ -168,7 +183,7 @@
     <div class="col-md-4">
       <div class="col-xs-4"><img src="pictures/live.png" alt=""></div>
       <div class="col-xs-8">
-        <div class="feature-heading">Live commentary and statistics</div>
+        <div class="feature-heading">Live commentary</div>
         <div class="feature-para">Enjoy the game in a new way<br> ON THE GO!</div>
       </div>
     </div>
@@ -198,7 +213,7 @@
         <div class="slide__text">
           <h2 class="slide__text-heading">Why CricInShots?</h2>
           <p class="slide__text-desc">In this chaotic world, we really don't have time left for our first love cricket.Inator presents to you CricInShots, to keep in touch with all the special moments and acts on the field in a short to you anywhere.</p>
-          <a class="slide__text-link">Some link</a>
+          <a class="slide__text-link"></a>
         </div>
       </div>
     </div>
@@ -214,7 +229,7 @@
             other user devices will be able to stream various
             pre-decided sounds / music / tunes whenever a
             user clicks on ‘cheer’ in the CricInShots app</p>
-          <a class="slide__text-link">Project link</a>
+          <a class="slide__text-link"></a>
         </div>
       </div>
     </div>
@@ -231,7 +246,7 @@
             What's more fun than a
             photo opportunity with
             your favourite player?</p>
-          <a class="slide__text-link">Project link</a>
+          <a class="slide__text-link"></a>
         </div>
       </div>
     </div>
@@ -244,7 +259,7 @@
         <div class="slide__text">
           <h2 class="slide__text-heading">Ads Integration</h2>
           <p class="slide__text-desc">Non intrusive and engaging Ads with guaranteed impressions</p>
-          <a class="slide__text-link">Project link</a>
+          <a class="slide__text-link"></a>
         </div>
       </div>
     </div>
@@ -380,10 +395,9 @@
       <!--scripts loaded here from cdn for performance -->
  
    
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
- 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
       
 <script src="script.js"></script>    
 </body>
