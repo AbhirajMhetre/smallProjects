@@ -1029,7 +1029,7 @@ font-size: 1.5rem;
   }
   .btn-xl {
       padding: 5px 10px;
-      font-size: 14px;
+      font-size: 13px;
   }
   .navbar-brand {
       font-size: 13px;
@@ -1058,8 +1058,27 @@ font-size: 1.5rem;
 #current-score{
   margin-top: 15px;
 }
+.slider-pagi__elem {
+  width: 1rem;
+  height: 1rem;
+}
+.slide__text-desc {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
 
+ }
 
+/*just for iphone 5 and SE poor people*/
+ @media only screen and (max-device-width: 480px){
+header .header-content .inner h1 {
+    font-size: 20px;
+
+}
  }
  
  

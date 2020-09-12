@@ -181,11 +181,11 @@ async function liveData(){
   if(doc.response.items[0].commentary!==1 && doc.response.items[0].wagon!==1){
     flag=1;
   }
-  //console.log(doc.response.items[0]);
+console.log(doc.response.items[0]);
   return doc;
   }
+  //doc.response.items[0].competition.cid + '-' + doc.response.items[0].match_id;
   
-
 liveData().then((doc)=>{
   var i=0;
  
@@ -205,7 +205,7 @@ liveData().then((doc)=>{
     //No live match..
   }
   if(flag===2){
-  //console.log(doc.response.items[i]);
+  console.log(doc.response.items[i]);
   }
   if(flag===1){
   console.log("No live matches with active wagon and/or commentary...");
