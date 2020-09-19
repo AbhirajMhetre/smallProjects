@@ -177,87 +177,179 @@ var combineid ="";
 
 liveData().then((doc)=>{
  
- 
+
   if(doc.response.items.length){
         
   
           while(!(doc.response.items[i].commentary==1 && doc.response.items[i].wagon==1 && doc.response.items[i].format==6)){
             i++;
+            if(i === doc.response.items.length ){break;}
           }
-          console.log("value of i is" + i);
-          combineid = doc.response.items[i].competition.cid + '-' + doc.response.items[i].match_id;
-          console.log(combineid);
+if(i !== doc.response.items.length){
+  console.log("value of i is" + i);
+  combineid = doc.response.items[i].competition.cid + '-' + doc.response.items[i].match_id;
+  console.log("combineid is   ");
+  console.log(combineid);
 
 
-          var getmatch = "/Matches/" + combineid ;
-          var getmatch2 = "/UpcomingMatches/" + combineid
-          console.log(getmatch);
-          console.log(getmatch2);
-          //'/Matches/111079-37788/matchdetails/match'
-          
-          database.ref(getmatch).once('value').then((snap)=>{
-            console.log(snap.val());
-          database.ref(getmatch2).once('value').then((snap2)=>{
-            console.log(snap2.val());
-            if(snap.val().scorecard.length === 2){
-              //2nd inning
-              currentInningId= 1;
-            }else{
-              //1st inning
-              currentInningId= 0;
-            }
-           
-            
-            var battingTeamId = snap.val().scorecard[currentInningId].battingTeamId ;
-            var shortnamebat = "";
+  var getmatch = "/Matches/" + combineid ;
+  var getmatch2 = "/UpcomingMatches/" + combineid
+  console.log(getmatch);
+  console.log(getmatch2);
+  //'/Matches/111079-37788/matchdetails/match'
+  
+  database.ref(getmatch).once('value').then((snap)=>{
+    console.log(snap.val());
+  database.ref(getmatch2).once('value').then((snap2)=>{
+    console.log(snap2.val());
+    if(snap.val().scorecard.length === 2){
+      //2nd inning
+      currentInningId= 1;
+    }else{
+      //1st inning
+      currentInningId= 0;
+    }
+   
+    
+    var battingTeamId = snap.val().scorecard[currentInningId].battingTeamId ;
+    var shortnamebat = "";
 
-            if(snap2.val().team1.id === battingTeamId){
-              shortnamebat = snap2.val().team1.shortName;
-            }else{
-              shortnamebat = snap2.val().team2.shortName;
-            }
-        
-          var card =    '<div id="score-subheading">';
-          
-          
-                       if(flag==2){
-                        card += '<img id="live" src="pictures/live2.png" alt="">';
-                       }               
-                       
-                       
-                       card += snap2.val().Name + ", " + snap2.val().series.name + '<span onClick="hide(\'scorecard\')">X</span></div>'+
-                              '<div class="row">'+
-                                '<div id="left-card" class="col-4">'+
-                                  '<img src=" ' + snap2.val().team1.logoUrl +'" alt="">'+
-                                  '<div >' + snap2.val().team1.shortName  + '</div>'+
+    if(snap2.val().team1.id === battingTeamId){
+      shortnamebat = snap2.val().team1.shortName;
+    }else{
+      shortnamebat = snap2.val().team2.shortName;
+    }
 
-                                  '</div>'+
-                                '<div id="current-score" class="col-4">'+ shortnamebat + ":" + snap.val().scorecard[currentInningId].runs + "-" + snap.val().scorecard[currentInningId].wickets +'<br>('+ snap.val().scorecard[currentInningId].overs + ' overs)' +
-                                '</div>'+
+  var card =    '<div id="score-subheading">';
+  
+  
+               if(flag==2){
+                card += '<img id="live" src="pictures/live2.png" alt="">';
+               }               
+               
+               
+               card += snap2.val().Name + ", " + snap2.val().series.name + '<span onClick="hide(\'scorecard\')">X</span></div>'+
+                      '<div class="row">'+
+                        '<div id="left-card" class="col-4">'+
+                          '<img src=" ' + snap2.val().team1.logoUrl +'" alt="">'+
+                          '<div >' + snap2.val().team1.shortName  + '</div>'+
 
-                                '<div id="right-card" class="col-4">'+
-                                  '<img src=" ' + snap2.val().team2.logoUrl + ' " alt="">'+
-                                  '<div>'+ snap2.val().team2.shortName +'</div>'+
-                                  '<div>'+'</div>'+
-                                '</div>'+
-                                '</div>'+
-                                '<hr>'+
-                              '<div>'+ "RUN RATE: "+ snap.val().scorecard[currentInningId].runrate +
-                              '<div>'+ snap.val().scorecard[currentInningId].current_partnership.batsmen[0].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[0].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[0].balls+ ")" + "    |  "+
-                               snap.val().scorecard[currentInningId].current_partnership.batsmen[1].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[1].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[1].balls+ ")" + '</div>';
+                          '</div>'+
+                        '<div id="current-score" class="col-4">'+ shortnamebat + ":" + snap.val().scorecard[currentInningId].runs + "-" + snap.val().scorecard[currentInningId].wickets +'<br>('+ snap.val().scorecard[currentInningId].overs + ' overs)' +
+                        '</div>'+
 
-                              if(currentInningId === 1){
-                                card +=   '<div>Taget:' + snap.val().scorecard[1].target + " |  Req.RR:" + snap.val().scorecard[1].required_runrate + '</div>';
+                        '<div id="right-card" class="col-4">'+
+                          '<img src=" ' + snap2.val().team2.logoUrl + ' " alt="">'+
+                          '<div>'+ snap2.val().team2.shortName +'</div>'+
+                          '<div>'+'</div>'+
+                        '</div>'+
+                        '</div>'+
+                        '<hr>'+
+                      '<div>'+ "RUN RATE: "+ snap.val().scorecard[currentInningId].runrate +
+                      '<div>'+ snap.val().scorecard[currentInningId].current_partnership.batsmen[0].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[0].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[0].balls+ ")" + "    |  "+
+                       snap.val().scorecard[currentInningId].current_partnership.batsmen[1].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[1].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[1].balls+ ")" + '</div>';
 
-                              }
+                      if(currentInningId === 1){
+                        card +=   '<div>Taget:' + snap.val().scorecard[1].target + " |  Req.RR:" + snap.val().scorecard[1].required_runrate + '</div>';
+
+                      }
 
 
-                    card +=          '</div>';
-          
-                              $('#scorecard').append(card);
-         });
-          });
-        
+            card +=          '</div>';
+  
+                      $('#scorecard').append(card);
+ });//end of snapval2
+}); //end of snapval
+
+}else{
+
+  database.ref("/LatestMatchId").once('value').then((snapold)=>{
+    combineid = snapold.val();
+    console.log(combineid);
+
+
+
+    //latest match id mil gaya ab card banate
+
+var getmatch = "/Matches/" + combineid ;
+console.log(getmatch);
+var getmatch2 = "/UpcomingMatches/" + combineid
+database.ref(getmatch).once('value').then((snap)=>{
+  console.log(snap.val());
+database.ref(getmatch2).once('value').then((snap2)=>{
+  console.log(snap2.val());
+  if(snap.val().scorecard.length === 2){
+    //2nd inning
+    currentInningId= 1;
+  }else{
+    //1st inning
+    currentInningId= 0;
+  }
+ 
+  
+  var battingTeamId = snap.val().scorecard[currentInningId].battingTeamId ;
+  var shortnamebat = "";
+
+  if(snap2.val().team1.id === battingTeamId){
+    shortnamebat = snap2.val().team1.shortName;
+  }else{
+    shortnamebat = snap2.val().team2.shortName;
+  }
+
+var card =    '<div id="score-subheading">';
+
+             
+             
+             
+             card += snap2.val().Name + ", " + snap2.val().series.name + '<span onClick="hide(\'scorecard\')">X</span></div>'+
+                    '<div class="row">'+
+                      '<div id="left-card" class="col-4">'+
+                        '<img src=" ' + snap2.val().team1.logoUrl +'" alt="">'+
+                        '<div >' + snap2.val().team1.shortName  + '</div>'+
+
+                        '</div>'+
+                      '<div id="current-score" class="col-4">'+ shortnamebat + ":" + snap.val().scorecard[currentInningId].runs + "-" + snap.val().scorecard[currentInningId].wickets +'<br>('+ snap.val().scorecard[currentInningId].overs + ' overs)' +
+                      '</div>'+
+
+                      '<div id="right-card" class="col-4">'+
+                        '<img src=" ' + snap2.val().team2.logoUrl + ' " alt="">'+
+                        '<div>'+ snap2.val().team2.shortName +'</div>'+
+                        '<div>'+'</div>'+
+                      '</div>'+
+                      '</div>'+
+                      '<hr>'+
+                    '<div>'+ "RUN RATE: "+ snap.val().scorecard[currentInningId].runrate +
+                    '<div>'+ snap.val().scorecard[currentInningId].current_partnership.batsmen[0].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[0].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[0].balls+ ")" + "    |  "+
+                     snap.val().scorecard[currentInningId].current_partnership.batsmen[1].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[1].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[1].balls+ ")" + '</div>';
+
+
+
+
+          card +=          '</div>';
+
+                    $('#scorecard').append(card);
+});
+});
+
+
+
+//end of latest match when no live match
+
+
+
+
+
+
+
+
+  });
+
+
+
+
+}
+             
+  
         
 
 
@@ -276,7 +368,8 @@ liveData().then((doc)=>{
   
   }else{
   console.log('No live matches');
-    //No live match..
+
+
   }
 
 
