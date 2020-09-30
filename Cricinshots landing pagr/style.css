@@ -194,9 +194,9 @@ footer {
 }
 
 #first img{
-    background-image: url("https://wallpapercave.com/wp/wp4059913.jpg");
-    filter: blur(2px);
-    -webkit-filter: blur(2.5px);
+    background-image: url("https://www.t20event.com/wp-content/uploads/2019/10/t20-crickte.jpg");
+    /* filter: blur(2px);
+    -webkit-filter: blur(2.5px); */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -556,7 +556,7 @@ h3{
   }
   .slide:nth-child(2) .slide__bg {
     left: -50%;
-    background-image: url("pictures/sliderimg2.jpg");
+    background-image: url("pictures/sliderimg4.jpg");
   }
   .slide:nth-child(2) .slide__overlay-path {
     fill: #e1ccae;
@@ -586,7 +586,7 @@ h3{
   }
   .slide:nth-child(4) .slide__bg {
     left: -150%;
-    background-image: url("pictures/sliderimg4.jpg");
+    background-image: url("https://www.t20event.com/wp-content/uploads/2019/10/t20-crickte.jpg");
   }
   .slide:nth-child(4) .slide__overlay-path {
     fill: #cbc6c3;
@@ -987,6 +987,15 @@ border: red solid 2px;
  font-size: 2rem;
 }
 
+#download .card-title{
+  font-size: 2rem;
+  color: #333333;
+  font-family: inherit;
+}
+#download .card-text{
+  font-size: 1rem;
+  color: #636262;
+}
 
 
 
@@ -1007,6 +1016,7 @@ font-size: 1.5rem;
 }
 
   #first{
+
     background-image: url("https://fsa.zobj.net/crop.php?r=y-2hsKOHjN8cPIKnpoToCyhqLy0RoG5KiqajV_HkYbBUNbYpUr7IOUQrsGA16xUm9W-PqCxvhlyT3fY8NRW_ORSPkpTe1rE8syNBq3JxDvgk8JZcbTuXnK5sdTqbTsXmog9YbSxW_Lexk2G_ykuEfS9wAbUPH_auXiuYhUkX4rIiQ_z6c4N9lDp_oes");
     height: 100%;
     background-size: cover;

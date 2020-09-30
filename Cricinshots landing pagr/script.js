@@ -175,228 +175,243 @@ var flag=0;
 var i=0;
 var combineid ="";
 
-liveData().then((doc)=>{
+database.ref("/Matches/111079-37788/matchdetails/match").once('value').then((snap)=>{
+
+  var card = '<div id="score-subheading">' +snap.val().name + '<span onClick="hide(\'scorecard\')">X</span></div>'+
+                  '<div class="row">'+
+                    '<div id="left-card" class="col-4">'+
+                      '<img src="' + snap.val().Team1.logoUrl +'" alt="">'+
+                      '<div>' + snap.val().Team1.name +'</div>'+
+                      '<div>Rahim- 49*(39)</div>'+
+                      '<div>Hasan- 29(30)</div>'+
+                    '</div>'+
+                    '<div id="current-score" class="col-4">IN-'+  snap.val().scores.Team2score  +'<br>('+  snap.val().scores.Team2overs  +'overs)</div>'+
+                    '<div id="right-card" class="col-4">'+
+                      '<img src="' + snap.val().Team2.logoUrl +'">' +
+                      '<div >' + snap.val().Team2.name +'</div>'+
+                      '<div>Sharma- 44(49)</div>'+
+                      '<div>Kohli- 59(40)</div>'+
+                    '</div>'+
+                  '</div>'+
+                    '<div>'+ snap.val().matchSummaryText+'</div>';
+      $('#scorecard').append(card);
+
+});
+
+
+
+// liveData().then((doc)=>{
  
 
-  if(doc.response.items.length){
+//   if(doc.response.items.length){
         
   
-          while(!(doc.response.items[i].commentary==1 && doc.response.items[i].wagon==1 && doc.response.items[i].format==6)){
-            i++;
-            if(i === doc.response.items.length ){break;}
-          }
-if(i !== doc.response.items.length){
-  console.log("value of i is" + i);
-  combineid = doc.response.items[i].competition.cid + '-' + doc.response.items[i].match_id;
-  console.log("combineid is   ");
-  console.log(combineid);
+//           while(!(doc.response.items[i].commentary==1  && doc.response.items[i].format==6)){
+//             i++;
+//             if(i === doc.response.items.length ){break;}
+//           }
+// i=0;
+// if(doc.response.items.length != i){
+//   console.log("value of i is" + i);
+//   combineid = doc.response.items[i].competition.cid + '-' + doc.response.items[i].match_id;
+//   console.log("combineid is   ");
+//   console.log(combineid);
 
 
-  var getmatch = "/Matches/" + combineid ;
-  var getmatch2 = "/UpcomingMatches/" + combineid
-  console.log(getmatch);
-  console.log(getmatch2);
-  //'/Matches/111079-37788/matchdetails/match'
+//   var getmatch = "/Matches/" + combineid ;
+//   var getmatch2 = "/UpcomingMatches/" + combineid
+//   console.log(getmatch);
+//   console.log(getmatch2);
+//   //'/Matches/111079-37788/matchdetails/match'
   
-  database.ref(getmatch).once('value').then((snap)=>{
-    console.log(snap.val());
-  database.ref(getmatch2).once('value').then((snap2)=>{
-    console.log(snap2.val());
-    if(snap.val().scorecard.length === 2){
-      //2nd inning
-      currentInningId= 1;
-    }else{
-      //1st inning
-      currentInningId= 0;
-    }
+//   database.ref(getmatch).once('value').then((snap)=>{
+//     console.log(snap.val());
+//   database.ref(getmatch2).once('value').then((snap2)=>{
+//     console.log(snap2.val());
+//     if(snap.val().scorecard.length === 2){
+//       //2nd inning
+//       currentInningId= 1;
+//     }else{
+//       //1st inning
+//       currentInningId= 0;
+//     }
    
     
-    var battingTeamId = snap.val().scorecard[currentInningId].battingTeamId ;
-    var shortnamebat = "";
+//     var battingTeamId = snap.val().scorecard[currentInningId].battingTeamId ;
+//     var shortnamebat = "";
 
-    if(snap2.val().team1.id === battingTeamId){
-      shortnamebat = snap2.val().team1.shortName;
-    }else{
-      shortnamebat = snap2.val().team2.shortName;
-    }
+//     if(snap2.val().team1.id === battingTeamId){
+//       shortnamebat = snap2.val().team1.shortName;
+//     }else{
+//       shortnamebat = snap2.val().team2.shortName;
+//     }
 
-  var card =    '<div id="score-subheading">';
+//   var card =    '<div id="score-subheading">';
   
-  
-               if(flag==2){
-                card += '<img id="live" src="pictures/live2.png" alt="">';
-               }               
+
+//                if(flag==2){
+//                 card += '<img id="live" src="pictures/live2.png" alt="">';
+//                }               
                
                
-               card += snap2.val().Name + ", " + snap2.val().series.name + '<span onClick="hide(\'scorecard\')">X</span></div>'+
-                      '<div class="row">'+
-                        '<div id="left-card" class="col-4">'+
-                          '<img src=" ' + snap2.val().team1.logoUrl +'" alt="">'+
-                          '<div >' + snap2.val().team1.shortName  + '</div>'+
+//                card += snap2.val().Name + ", " + snap2.val().series.name + '<span onClick="hide(\'scorecard\')">X</span></div>'+
+//                       '<div class="row">'+
+//                         '<div id="left-card" class="col-4">'+
+//                           '<img src=" ' + snap2.val().team1.logoUrl +'" alt="">'+
+//                           '<div >' + snap2.val().team1.shortName  + '</div>'+
 
-                          '</div>'+
-                        '<div id="current-score" class="col-4">'+ shortnamebat + ":" + snap.val().scorecard[currentInningId].runs + "-" + snap.val().scorecard[currentInningId].wickets +'<br>('+ snap.val().scorecard[currentInningId].overs + ' overs)' +
-                        '</div>'+
+//                           '</div>'+
+//                         '<div id="current-score" class="col-4">'+ shortnamebat + ":" + snap.val().scorecard[currentInningId].runs + "-" + snap.val().scorecard[currentInningId].wickets +'<br>('+ snap.val().scorecard[currentInningId].overs + ' overs)' +
+//                         '</div>'+
 
-                        '<div id="right-card" class="col-4">'+
-                          '<img src=" ' + snap2.val().team2.logoUrl + ' " alt="">'+
-                          '<div>'+ snap2.val().team2.shortName +'</div>'+
-                          '<div>'+'</div>'+
-                        '</div>'+
-                        '</div>'+
-                        '<hr>'+
-                      '<div>'+ "RUN RATE: "+ snap.val().scorecard[currentInningId].runrate +
-                      '<div>'+ snap.val().scorecard[currentInningId].current_partnership.batsmen[0].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[0].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[0].balls+ ")" + "    |  "+
-                       snap.val().scorecard[currentInningId].current_partnership.batsmen[1].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[1].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[1].balls+ ")" + '</div>';
+//                         '<div id="right-card" class="col-4">'+
+//                           '<img src=" ' + snap2.val().team2.logoUrl + ' " alt="">'+
+//                           '<div>'+ snap2.val().team2.shortName +'</div>'+
+//                           '<div>'+'</div>'+
+//                         '</div>'+
+//                         '</div>'+
+//                         '<hr>'+
+//                       '<div>'+ "RUN RATE: "+ snap.val().scorecard[currentInningId].runrate +
+//                       '<div>'+ snap.val().scorecard[currentInningId].current_partnership.batsmen[0].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[0].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[0].balls+ ")" + "    |  "+
+//                        snap.val().scorecard[currentInningId].current_partnership.batsmen[1].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[1].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[1].balls+ ")" + '</div>';
 
-                      if(currentInningId === 1){
-                        card +=   '<div>Taget:' + snap.val().scorecard[1].target + " |  Req.RR:" + snap.val().scorecard[1].required_runrate + '</div>';
+//                       if(currentInningId === 1){
+//                         card +=   '<div>Taget:' + snap.val().scorecard[1].target + " |  Req.RR:" + snap.val().scorecard[1].required_runrate + '</div>';
 
-                      }
+//                       }
 
 
-            card +=          '</div>';
+//             card +=          '</div>';
   
-                      $('#scorecard').append(card);
- });//end of snapval2
-}); //end of snapval
+//                       $('#scorecard').append(card);
+//  });//end of snapval2
+// }); //end of snapval
 
-}else{
+// }else{
 
-  database.ref("/LatestMatchId").once('value').then((snapold)=>{
-    combineid = snapold.val();
-    console.log(combineid);
+//   database.ref("/LatestMatchId").once('value').then((snapold)=>{
+//     combineid = snapold.val();
+//     console.log(combineid);
 
 
 
-    //latest match id mil gaya ab card banate
+//     //latest match id mil gaya ab card banate
 
-var getmatch = "/Matches/" + combineid ;
-console.log(getmatch);
-var getmatch2 = "/UpcomingMatches/" + combineid
-database.ref(getmatch).once('value').then((snap)=>{
-  console.log(snap.val());
-database.ref(getmatch2).once('value').then((snap2)=>{
-  console.log(snap2.val());
-  if(snap.val().scorecard.length === 2){
-    //2nd inning
-    currentInningId= 1;
-  }else{
-    //1st inning
-    currentInningId= 0;
-  }
+// var getmatch = "/Matches/" + combineid ;
+// console.log(getmatch);
+// var getmatch2 = "/UpcomingMatches/" + combineid
+// database.ref(getmatch).once('value').then((snap)=>{
+//   console.log(snap.val());
+// database.ref(getmatch2).once('value').then((snap2)=>{
+//   console.log(snap2.val());
+//   if(snap.val().scorecard.length === 2){
+//     //2nd inning
+//     currentInningId= 1;
+//   }else{
+//     //1st inning
+//     currentInningId= 0;
+//   }
  
   
-  var battingTeamId = snap.val().scorecard[currentInningId].battingTeamId ;
-  var shortnamebat = "";
+//   var battingTeamId = snap.val().scorecard[currentInningId].battingTeamId ;
+//   var shortnamebat = "";
 
-  if(snap2.val().team1.id === battingTeamId){
-    shortnamebat = snap2.val().team1.shortName;
-  }else{
-    shortnamebat = snap2.val().team2.shortName;
-  }
+//   if(snap2.val().team1.id === battingTeamId){
+//     shortnamebat = snap2.val().team1.shortName;
+//   }else{
+//     shortnamebat = snap2.val().team2.shortName;
+//   }
 
-var card =    '<div id="score-subheading">';
+// var card =    '<div id="score-subheading">';
 
              
              
              
-             card += snap2.val().Name + ", " + snap2.val().series.name + '<span onClick="hide(\'scorecard\')">X</span></div>'+
-                    '<div class="row">'+
-                      '<div id="left-card" class="col-4">'+
-                        '<img src=" ' + snap2.val().team1.logoUrl +'" alt="">'+
-                        '<div >' + snap2.val().team1.shortName  + '</div>'+
+//              card += snap2.val().Name + ", " + snap2.val().series.name + '<span onClick="hide(\'scorecard\')">X</span></div>'+
+//                     '<div class="row">'+
+//                       '<div id="left-card" class="col-4">'+
+//                         '<img src=" ' + snap2.val().team1.logoUrl +'" alt="">'+
+//                         '<div >' + snap2.val().team1.shortName  + '</div>'+
 
-                        '</div>'+
-                      '<div id="current-score" class="col-4">'+ shortnamebat + ":" + snap.val().scorecard[currentInningId].runs + "-" + snap.val().scorecard[currentInningId].wickets +'<br>('+ snap.val().scorecard[currentInningId].overs + ' overs)' +
-                      '</div>'+
+//                         '</div>'+
+//                       '<div id="current-score" class="col-4">'+ shortnamebat + ":" + snap.val().scorecard[currentInningId].runs + "-" + snap.val().scorecard[currentInningId].wickets +'<br>('+ snap.val().scorecard[currentInningId].overs + ' overs)' +
+//                       '</div>'+
 
-                      '<div id="right-card" class="col-4">'+
-                        '<img src=" ' + snap2.val().team2.logoUrl + ' " alt="">'+
-                        '<div>'+ snap2.val().team2.shortName +'</div>'+
-                        '<div>'+'</div>'+
-                      '</div>'+
-                      '</div>'+
-                      '<hr>'+
-                    '<div>'+ "RUN RATE: "+ snap.val().scorecard[currentInningId].runrate +
-                    '<div>'+ snap.val().scorecard[currentInningId].current_partnership.batsmen[0].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[0].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[0].balls+ ")" + "    |  "+
-                     snap.val().scorecard[currentInningId].current_partnership.batsmen[1].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[1].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[1].balls+ ")" + '</div>';
-
-
-
-
-          card +=          '</div>';
-
-                    $('#scorecard').append(card);
-});
-});
+//                       '<div id="right-card" class="col-4">'+
+//                         '<img src=" ' + snap2.val().team2.logoUrl + ' " alt="">'+
+//                         '<div>'+ snap2.val().team2.shortName +'</div>'+
+//                         '<div>'+'</div>'+
+//                       '</div>'+
+//                       '</div>'+
+//                       '<hr>'+
+//                     '<div>'+ "RUN RATE: "+ snap.val().scorecard[currentInningId].runrate +
+//                     '<div>'+ snap.val().scorecard[currentInningId].current_partnership.batsmen[0].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[0].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[0].balls+ ")" + "    |  "+
+//                      snap.val().scorecard[currentInningId].current_partnership.batsmen[1].name + " " + snap.val().scorecard[currentInningId].current_partnership.batsmen[1].runs + "*(" +snap.val().scorecard[currentInningId].current_partnership.batsmen[1].balls+ ")" + '</div>';
 
 
 
-//end of latest match when no live match
+
+//           card +=          '</div>';
+
+//                     $('#scorecard').append(card);
+// });
+// });
 
 
+
+// //end of latest match when no live match
 
 
 
 
 
 
-  });
+
+
+//   });
 
 
 
 
-}
-             
+// }
+
+//           if(i===doc.response.items.length+1){
+//               flag=1;
+//           }else{
+//             flag=2;
+//           }
   
-        
+//   }else{
+//   console.log('No live matches');
+
+
+//   }
 
 
 
+//   if(flag===2){
+//   console.log(doc.response.items[i]);
+//     //card for live match
+
+//   }
+//   if(flag===1){
+//   console.log("No live matches with active wagon and/or commentary...");
+//   }
+//   })
 
 
-
-
-
-
-          if(i===doc.response.items.length+1){
-              flag=1;
-          }else{
-            flag=2;
-          }
+// async function liveData(){
+//   let respo=await axios.get('https://rest.entitysport.com/v2/matches/?status=3&token=179b91399ba70939285b7ff479269eb9');
+//   var doc=respo.data;
+//   console.log(doc.response.items);
   
-  }else{
-  console.log('No live matches');
+//   if(doc.response.items[i].commentary!==1  && doc.response.items[i].format!==6){
+//     flag=1;
+//   }
 
 
-  }
-
-
-
-  if(flag===2){
-  console.log(doc.response.items[i]);
-    //card for live match
-
-  }
-  if(flag===1){
-  console.log("No live matches with active wagon and/or commentary...");
-  }
-  })
-
-
-async function liveData(){
-  let respo=await axios.get('https://rest.entitysport.com/v2/matches/?status=3&token=179b91399ba70939285b7ff479269eb9');
-  var doc=respo.data;
-  console.log(doc.response.items);
-  
-  if(doc.response.items[i].commentary!==1 && doc.response.items[i].wagon!==1 && doc.response.items[i].format!==6){
-    flag=1;
-  }
-
-
-  return doc;
-  }
+//   return doc;
+//   }
   
 
 
