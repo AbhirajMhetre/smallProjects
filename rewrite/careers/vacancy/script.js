@@ -158,7 +158,7 @@ ref.on("value", function(snapshot) {
           content += '  <!-- APPLY FORM -->'+
   
           '<section id="contact" class="item" data-aos="slide-up">'+
-            'div class="container">'+
+            '<div class="container">'+
               '<div class="row">'+
                 '<div class="col-lg-12 text-center">'+
                   '<h2 class="section-heading">Apply Now!!</h2>'+
