@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=yes">
+    <title>CrinInshots</title>
+</head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="#" target="_blank">
+      <strong>CricInShots</strong>
+    </a>
+
+    <!-- Collapse -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Left -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutapp">About App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#download">Download</a>
+        </li>
+      </ul>
+
+
+
+    </div>
+
+  </div>
+</nav>
+<!-- Navbar -->
+ 
+
+  
+      <header id="first">
+        <img id="mainimg" src="./pictures/sliderimg2.jpg" alt="">
+        <div class="header-content">
+          <div class="inner">
+            <h1>CricInShots</h1>
+            <h4>Unlock Better Cricketing Experience, by CricInShots</h4>
+            <hr>
+          <div>
+            <a href="https://cricinshots.com/presentation/"  class="btn btn-primary btn-xl">Presentation</a> &nbsp; 
+            <a href="https://cricinshots.com/android" class="btn btn-primary btn-xl page-scroll">Download App</a>
+          </div>
+          </div>
+        </div>
+ </header>
+ 
+
+  <a href="#aboutapp" class="scroll-down" address="true"></a>
+
+<div onClick="show('scorecard')" id="open-score">SCORE</div>
+
+  <!-- SCORECARD -->
+<div id="scorecard">
+  <!-- <div id="score-subheading">Nidahas Trophy, T20 2-5 <span onClick="hide('scorecard')">X</span></div>
+<div class="row">
+  <div id="left-card" class="col-4">
+    <img src="https://cricket.entitysport.com/assets/uploads/2016/01/bangladesh.png" alt="">
+    <div >Bangladesh</div>
+    <div>Rahim- 49*(19)</div>
+    <div>Hasan- 29(10)</div>
+  </div>
+  <div id="current-score" class="col-4">India 190-4 <br>(18.4 overs)</div>
+  <div id="right-card" class="col-4">
+    <img src="https://cricket.entitysport.com/assets/uploads/2016/01/india.png" alt="">
+    <div >India</div>
+    <div>Sharma- 94(49)</div>
+    <div>Kohli- 59(40)</div>
+  </div>
+</div>
+  <div>India won by 6 wickets (with 8 balls remaining)</div> -->
+</div>
+
+<div class="service-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="service-single">
+          <img src="pictures/field.jpg" alt="">
+          <h2>Field Visualiser</h2>
+          <p>The Highlight of our app!<br><br></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="service-single">
+          <img src="pictures/mic.jpg" alt="">
+          <h2>Commentry</h2>
+          <p>In app commentry to keep you updated all the time.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="service-single">
+          <img src="pictures/chat.jpg" alt="">
+          <h2>Chat Functionlity</h2>
+          <p>So you can discuss the game with eager fans like yourself!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="aboutapp" class="container">
+  <h3>About App</h3>
+  <hr class="style-one">
+  <p id="aboutintro">A visual representation of cricket that will make you ponder the pace of cricket. <br> An Augmented reality, real-time, immersive Cricketing Experience.</p>
+  <div class="row">
+    <div class="col-md-6 col-xs-12">
+      <img src="./pictures/ss21.png" alt="">
+    </div>
+    <div id="aboutpara" class="col-md-6 col-xs-12">
+      <p>In a world of fast action and lives lived in the fast lane, why be stuck with the slow pace of cricket on TV or the dreary text of Cricket Commentary? What if you could see and understand, in a glance, what each ball in a game means, no reading text or waiting for players to move. Follow the action at your own pace and be freed of the anchor that is a TV or match video.</p>
+    <p>The CricInShots app visualizes each ball in a game to get you a picture of the field and the action on it. In a few seconds and a single glance, you will know how many runs, where the ball went and who was on the pitch.    </p>
+      </div>
+  </div>
+</div>
+
+
+<div id="features" class="container">
+  <h3>Features</h3>
+  <hr class="style-one">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="col-xs-4"><img src="pictures/car.svg" alt=""></div>
+      <div class="col-xs-8">
+        <div class="feature-heading">A Fresh Experience</div>
+        <div class="feature-para">Enjoy the game in a new way<br> ON THE GO!</div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="col-xs-4"><img src="pictures/chat.svg" alt=""></div>
+      <div class="col-xs-8">
+        <div class="feature-heading">Discuss</div>
+        <div class="feature-para">Chat with other fellow supporters right from the app while keeping tabs on score</div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="col-xs-4"><img src="pictures/groung.png" alt=""></div>
+      <div class="col-xs-8">
+        <div class="feature-heading">Wagon wheel!</div>
+        <div class="feature-para">Watch 2D animation of every ball of the game live!</div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="col-xs-4"><img src="pictures/predict.png" alt=""></div>
+      <div class="col-xs-8">
+        <div class="feature-heading">Predict</div>
+        <div class="feature-para">Make predictions and see where you stand on the leaderboard!</div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="col-xs-4"><img src="pictures/live.png" alt=""></div>
+      <div class="col-xs-8">
+        <div class="feature-heading">Live commentary</div>
+        <div class="feature-para">Listen to what experts have to say before discussing it</div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="col-xs-4"><img src="pictures/news.png" alt=""></div>
+      <div class="col-xs-8">
+        <div class="feature-heading">News and team data</div>
+        <div class="feature-para">Read news and access player information while keeping tabs on score</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDER -->
+<div class="slider-container">
+  <div class="slider-control left inactive"></div>
+  <div class="slider-control right"></div>
+  <ul class="slider-pagi"></ul>
+  <div class="slider">
+    <div class="slide slide-0 active">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">Why CricInShots?</h2>
+          <p class="slide__text-desc">In this chaotic world, we really don't have time left for our first love cricket.Inator presents to you CricInShots, to keep in touch with all the special moments and acts on the field in a short to you anywhere.</p>
+          <a class="slide__text-link"></a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-1 ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">Live stream the cheering of the fans directly on the stadium!</h2>
+          <p class="slide__text-desc">With CricInShots, external speakers along with
+            other user devices will be able to stream various
+            pre-decided sounds / music / tunes whenever a
+            user clicks on ‘cheer’ in the CricInShots app</p>
+          <a class="slide__text-link"></a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-2">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">Photo Corner</h2>
+          <p class="slide__text-desc">Bring your favourite player
+            right into your living room!
+            What's more fun than a
+            photo opportunity with
+            your favourite player?</p>
+          <a class="slide__text-link"></a>
+        </div>
+      </div>
+    </div>
+    <div class="slide slide-3">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        <div class="slide__text">
+          <h2 class="slide__text-heading">Ads Integration</h2>
+          <p class="slide__text-desc">Non intrusive and engaging Ads with guaranteed impressions</p>
+          <a class="slide__text-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <div id="download" class="container">
+    <div>
+        <h3>Download</h3>
+        <hr class="style-one">
+        <p>Our app is available for all devices.</p>
+    </div>
+    <div >
+      <!-- <a href="" class="btn btn-primary btn-xl"><i class="fa fa-apple"> App Store</i></a>
+      <a href="" class="btn btn-primary btn-xl"><i class="fa fa-windows "> Windows</i></a> -->
+      <a href="https://cricinshots.com/android" class="btn btn-primary btn-xl"><i class="fa fa-android"> DOWNLOAD</i></a>
+    </div>
+    <p>Follow these steps to download the CricInShots android app</p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Step 1</h5>
+            <p class="card-text">Download the app</p>
+       
+          </div>
+          <img style="margin-top: 28px;" src="./pictures/step111.png" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Step 2</h5>
+            <p class="card-text">Tap on settings and allow your browser to install apps from unknown sources</p>
+          
+          </div>
+          <img src="./pictures/ste2blurr.png" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Step 3</h5>
+            <p class="card-text">Give permission to your browser</p>
+ 
+          </div>
+          <img style="margin-top: 28px;"  src="./pictures/step3 (1).png" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Site footer -->
+
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 item" data-aos="slide-up">
+            <div>
+              
+              <form id="contact">
+                <h6>Contact Us</h6>
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Email</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your email ID..">
+            
+          
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Your query goes here.." style="height:100px"></textarea>
+            
+                <input type="submit" value="SEND">
+            
+              </form>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3 item" data-aos="slide-up">
+            <!-- <h6>Address</h6>
+            <div class="text-justify address">Main Office
+              <p class="text-justify">5/403, Ved Vihar, besides Ved Bhavan, Paud road, Kothrud, 411038, Pune</p>
+            </div>
+           
+            <div class="text-justify address">Branch Office
+              <p class="text-justify">5th Floor, D building,MIT WPU, Rambaug colony, Pune</p>
+            </div>
+           
+            <div class="text-justify address">Branch Office
+              <p class="text-justify">37 Wormwhole Road, Shephards Bush, London</p>
+            </div>
+            -->
+          </div>
+    
+    
+    
+        
+    
+          <div class="col-xs-12 col-md-3 item" data-aos="slide-up">
+            <!-- <h6>Our Services</h6>
+            <ul class="footer-links">
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">App Development</a></li>
+              <li><a href="#">PWA</a></li>
+              <li><a href="#">Cross-Platform Solutions</a></li>
+              <li><a href="#">Free Support</a></li>
+            </ul> -->
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">CricInShots</a>.
+            </p>
+          </div>
+    
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/inatorllp"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/Inatorllp"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="https://www.instagram.com/inator.llp/?hl=en"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/company/inatorllp/"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- FIREBASE CONNECT -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+  
+    var firebaseConfig = {
+      apiKey: "AIzaSyAOsrpyIyEE2ETSjsv_CpXCJurEk_R7CL8",
+      authDomain: "cricinshots-debug.firebaseapp.com",
+      databaseURL: "https://cricinshots-debug.firebaseio.com",
+      projectId: "cricinshots-debug",
+      storageBucket: "cricinshots-debug.appspot.com",
+      messagingSenderId: "741549579192",
+      appId: "1:741549579192:web:9b114d3ac33a0db76ccd4d",
+      measurementId: "G-LT96KRT59X"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  
+   
+      <!--scripts loaded here from cdn for performance -->
+ 
+   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+      
+<script src="script.js"></script>    
+</body>
+</html>

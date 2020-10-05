@@ -158,7 +158,7 @@ ref.on("value", function(snapshot) {
           content += '  <!-- APPLY FORM -->'+
   
           '<section id="contact" class="item" data-aos="slide-up">'+
-            'div class="container">'+
+            '<div class="container">'+
               '<div class="row">'+
                 '<div class="col-lg-12 text-center">'+
                   '<h2 class="section-heading">Apply Now!!</h2>'+
@@ -183,8 +183,8 @@ ref.on("value", function(snapshot) {
                           '<p class="help-block text-danger"></p>'+
                         '</div>'+
                         '<div class="form-group">'+
-            
-                          '<input name="userfile" type="file" class="form-control" placeholder="Attach Resume *" id="phone" accept="application/pdf, application/vnd.ms-excel" required="" data-validation-required-message="Please attach your resume">'+
+                          '<label style="height:auto;padding:20px;color: #6f787f;" class="form-control" for="resume">Add Resume *</label>'+
+                          '<input style="display:none" name="userfile" type="file" class="form-control" placeholder="Attach Resume *" id="resume" accept="application/pdf, application/vnd.ms-excel" required="" data-validation-required-message="Please attach your resume">'+
                         
                         '</div>'+
                       '</div>'+
@@ -197,7 +197,7 @@ ref.on("value", function(snapshot) {
                       '<div class="clearfix"></div>'+
                       '<div class="col-lg-12 text-center">'+
                         '<div id="success"></div>'+
-                        '<button type="submit" class="btn btn-xl">Send Message</button>'+
+                        '<button type="submit" class="btn btn-xl">Apply</button>'+
                       '</div>'+
                     '</div>'+
                   '</form>'+
