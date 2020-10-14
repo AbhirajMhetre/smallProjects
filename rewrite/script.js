@@ -1,7 +1,7 @@
 //text change on landing page
 $(function(){
   $(".typed").typed({
-    strings: ["website.", "android app.", "iphone app.", "pc software.", "management software.", "online shop."],
+    strings: ["website.", "android app.", "iphone app.", "pc software.", "management software.", "cross platform solutions."],
     typeSpeed: 1,
     loop: true,
     backDelay: 1000

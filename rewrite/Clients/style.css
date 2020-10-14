@@ -1275,8 +1275,12 @@ background-color:#ea4c89
 
 .site-footer img{
   width: 100px;
+  height: 100px;
 }
 
 .site-footer .row{
   width: 100%;
+}
+.col-6{
+  width: 50%;
 }

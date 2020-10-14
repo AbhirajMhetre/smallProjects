@@ -234,15 +234,15 @@ ref.on("value", function(snapshot) {
               '</div>'+
               '<div class="col-sm-12 col-md-3">'+
                 '<h6>Address</h6>'+
-                '<div class="text-justify address">Main Office'+
+                '<div class="text-justify address">Main Office<img style="width:20px;height: 20px;border-radius: 50%;" src="https://images-na.ssl-images-amazon.com/images/I/418oSHGyQ1L.jpg" alt="">'+
                   '<p class="text-justify">5/403, Ved Vihar, besides Ved Bhavan, Paud road, Kothrud, 411038, Pune</p>'+
                 '</div>'+
                
-                '<div class="text-justify address">Branch Office'+
+                '<div class="text-justify address">Branch Office<img style="width:20px;height: 20px;border-radius: 50%;" src="https://images-na.ssl-images-amazon.com/images/I/418oSHGyQ1L.jpg" alt="">'+
                   '<p class="text-justify">5th Floor, D building,MIT WPU, Rambaug colony, Pune</p>'+
                 '</div>'+
                
-                '<div class="text-justify address">Branch Office'+
+                '<div class="text-justify address">Branch Office <img style="width:20px;height: 20px;border-radius: 50%;" src="https://p7.hiclipart.com/preview/896/336/23/flag-of-great-britain-flag-of-the-united-kingdom-flag-of-england-others.jpg" alt="">'+
                   '<p class="text-justify">37 Wormwhole Road, Shephards Bush, London</p>'+
                 '</div>'+
                
@@ -262,8 +262,16 @@ ref.on("value", function(snapshot) {
                   '<li><a href="#">Free Support</a></li>'+
                 '</ul>'+
                 '<h6>Our Affiliations</h6>'+
-                '<img src="../../icons/nordvpn.png" alt="" srcset="">'+
-                '<div>The only one to rely</div>'+
+                '<div class="row">'+
+                '<div class="col-6">'+
+                  '<img src="../../icons/nordvpn.png" alt="" srcset="">'+
+              '<div>The only one to rely</div>'+
+                '</div>'+
+                '<div class="col-6">'+
+                  '<img src="../../icons/eyugalogo.png" alt="">'+
+                  '<div>Our London Partner</div>'+
+                '</div>'+
+              '</div>'+
               '</div>'+
             '</div>'+
             '<hr>'+

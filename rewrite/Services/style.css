@@ -409,7 +409,11 @@ h1{
 
 
 
-
+@media (min-width:500px){
+  h1{
+    margin-top: 80px;
+  }
+}
 
 
 
@@ -673,6 +677,7 @@ background-color:#ea4c89
 
 .site-footer img{
   width: 100px;
+  height: 100px;
 }
 
 .site-footer .row{
